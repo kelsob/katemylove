@@ -1,0 +1,157 @@
+Website Design Document for KateOnEarth.com
+
+Overview
+
+KateOnEarth.com is a portfolio and personal site for Kate, a public speaker, writer, and communications strategist with a focus on space science. The website should reflect her professional expertise while also capturing her unique, creative personality. The design should be dark, professional, and clean, with a spacy aesthetic featuring black backgrounds accented with bold pops of color, inspired by space, nebulas, and planets.
+
+Site Structure
+
+1. Home (Splash Page)
+
+Purpose: A visually striking landing page introducing Kate and her work.
+
+Content:
+
+Large, impactful heading: "Kate on Earth: Communicating the Wonders of Space"
+
+Short bio introducing her as a speaker, writer, and strategist.
+
+Call-to-action (CTA) buttons leading to "About," "Work," and "Contact."
+
+Design Elements:
+
+Black background with animated, slow-moving nebulas.
+
+Subtle glowing text for headings.
+
+High-resolution space imagery, dynamic lighting effects.
+
+2. About Page
+
+Purpose: Provide a detailed overview of Kate’s background and philosophy.
+
+Content:
+
+Expanded bio detailing her career, interests, and approach to science communication.
+
+Photo of Kate in a professional yet creative setting.
+
+Timeline of career milestones.
+
+Design Elements:
+
+Elegant typography.
+
+Smooth scroll effects for timeline.
+
+Hover effects on milestones to reveal more details.
+
+3. Previous Work
+
+A. Companies She’s Interviewed For
+
+List of interviews (TV, radio, podcasts, print media).
+
+Logos of major media outlets with links to interviews.
+
+B. Companies She’s Done Lectures For
+
+List of conferences, keynotes, and panels.
+
+Embedded videos or transcripts of talks.
+
+C. Boards & Advisory Roles
+
+Organizations she’s worked with (Planetary Society, Government of Canada, etc.).
+
+Visual hierarchy to showcase leadership roles prominently.
+
+Design Elements:
+
+Grid-based layout.
+
+Interactive hover effects to display details.
+
+Subtle space-inspired divider elements.
+
+4. Contact & Services
+
+Purpose: Provide an easy way to reach Kate and outline services offered.
+
+Content:
+
+Contact form with required fields: Name, Email, Message, Inquiry Type.
+
+List of services:
+
+Public speaking (with example topics)
+
+Science writing (clear, engaging content creation)
+
+Editing (proofreading, copyediting, SEO optimization)
+
+Nonprofit & communications consulting
+
+CTA: "Let’s Connect!"
+
+Design Elements:
+
+Cosmic-themed form fields with soft glowing outlines.
+
+Floating buttons for social media/contact.
+
+5. Creative Work ("Weird" Page)
+
+Purpose: Showcase Kate’s unique, experimental creative side.
+
+Content:
+
+"Whoa" project description and embedded videos.
+
+Links to other artistic collaborations.
+
+Description of artistic philosophy and inspiration.
+
+Design Elements:
+
+Unconventional layout with layered images/videos.
+
+Animated transitions and unexpected interactions.
+
+Slightly surreal space-inspired visuals.
+
+Overall Design & Aesthetic
+
+Primary Colors: Black, deep blues, purples (backgrounds), vibrant neon pinks, oranges, and yellows (accents).
+
+Typography:
+
+Headings: Bold, modern sans-serif.
+
+Body: Clean, easy-to-read sans-serif.
+
+Imagery & Effects:
+
+Subtle animations (e.g., twinkling stars, parallax effects).
+
+High-res space photography with overlays of Kate’s work.
+
+Navigation:
+
+Sticky navbar with a glowing hover effect.
+
+Smooth-scrolling transitions between sections.
+
+Functionality & Features
+
+Responsive Design: Optimized for desktop, tablet, and mobile.
+
+SEO Optimization: Metadata, structured content, and fast-loading images.
+
+CMS Integration: If needed, a blog section can be added for new projects/articles.
+
+Accessibility: High-contrast text, alt text for images, and keyboard-friendly navigation.
+
+Summary
+
+KateOnEarth.com should be a polished, engaging, and visually striking site that combines professionalism with creative flair. It should be easy to navigate while immersing visitors in an experience that mirrors Kate’s passion for space, science communication, and creativity.

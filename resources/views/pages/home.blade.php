@@ -1,302 +1,258 @@
 <x-app-layout>
-    <!-- Hero Section -->
+    <!-- Hero Section with Space Theme -->
     <div class="relative min-h-screen flex items-center">
-        <!-- Tech Background Pattern -->
+        <!-- Animated Nebula Background -->
         <div class="absolute inset-0 z-0 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
-            <div class="absolute inset-0">
-                <div class="absolute inset-0 bg-gradient-radial from-transparent to-gray-900"></div>
-                <div class="absolute inset-0 opacity-10">
-                    <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
-                        </pattern>
-                        <rect width="100" height="100" fill="url(#grid)" />
-                    </svg>
+            <div class="absolute inset-0 bg-black">
+                <!-- Animated nebula effect using gradients and animation -->
+                <div class="absolute inset-0 opacity-30 animate-nebula">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-transparent to-pink-900"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tl from-blue-900 via-transparent to-indigo-900"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-900/50 via-transparent to-teal-600/30"></div>
+                    <div class="absolute inset-0 bg-gradient-radial from-purple-900/20 via-transparent to-transparent"></div>
+                </div>
+                <!-- Twinkling stars effect -->
+                <div class="absolute inset-0" id="stars"></div>
+                <!-- Floating orbs with enhanced gradients -->
+                <div class="absolute inset-0 overflow-hidden">
+                    <div class="floating-orb absolute h-32 w-32 rounded-full bg-gradient-to-r from-teal-500/20 via-purple-500/20 to-pink-500/20 blur-xl"></div>
+                    <div class="floating-orb-2 absolute h-48 w-48 rounded-full bg-gradient-to-r from-pink-500/20 via-teal-500/20 to-purple-500/20 blur-xl"></div>
+                    <div class="floating-orb-3 absolute h-24 w-24 rounded-full bg-gradient-to-r from-purple-500/20 via-teal-500/20 to-pink-500/20 blur-xl"></div>
                 </div>
             </div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-                <div class="lg:col-span-7">
-                    <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                        <span class="block xl:inline">Digital Solutions</span>
-                        <br>
-                        <span class="block text-blue-400 xl:inline"> For Every Stage</span>
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                <div class="lg:col-span-7 space-y-8 relative">
+                    <!-- Earth Background -->
+                    <div class="absolute right-56 -top-12 pointer-events-none">
+                        <img 
+                            src="{{ asset('images/space/earth.png') }}" 
+                            alt="Earth Background" 
+                            class="w-48 floating-earth"
+                            style="mix-blend-mode: screen;"
+                        >
+                    </div>
+                    <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl relative z-10">
+                        <span class="block xl:inline">Kate on Earth:</span>
+                        <span class="block text-gradient xl:inline glow-text">Communicating the Wonders of Space</span>
                     </h1>
-                    <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        From website development to brand strategy, digital marketing to product design. 
-                        Whether you're just starting out or looking to scale, we provide the complete digital 
-                        toolkit for your business success.
+                    <p class="mt-3 text-xl text-gray-300 sm:mt-4">
+                        Public speaker, writer, and communications strategist bringing space science down to Earth.
                     </p>
-                    <div class="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
-                        <a href="{{ route('services') }}" 
-                           class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-blue-400 hover:bg-blue-500 md:text-lg">
-                            Explore Services
-                        </a>
-                        <a href="{{ route('contact') }}" 
-                           class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 md:text-lg">
-                            Start a Project
-                        </a>
-                    </div>
-                    
-                    <!-- Update service highlights to show diversity -->
-                    <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                        <div class="flex items-start space-x-3">
-                            <svg class="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-sm text-gray-300">Web Development & Maintenance</span>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg class="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-sm text-gray-300">Brand Strategy & Identity</span>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg class="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-sm text-gray-300">Digital Marketing & SEO</span>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg class="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-sm text-gray-300">Product Design & Strategy</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden lg:block lg:col-span-5">
-                    <div class="relative transform translate-x-8">
-                        <!-- Decorative tech elements -->
-                        <div class="absolute top-0 right-0 -mr-4 p-2 bg-gray-800 rounded-lg shadow-lg">
-                            <div class="w-8 h-8 bg-blue-400 rounded-md"></div>
-                        </div>
-                        <div class="absolute bottom-0 left-0 -ml-4 p-2 bg-gray-800 rounded-lg shadow-lg">
-                            <div class="w-8 h-8 bg-blue-400 rounded-md"></div>
-                        </div>
-                        <!-- Update the code snippet to reflect service diversity -->
-                        <div class="bg-gray-800 rounded-lg shadow-xl p-6 transform rotate-2">
-                            <pre class="text-blue-400 text-sm">
-<span class="text-gray-500">// Your complete digital toolkit</span>
-const pixelcraft = {
-    web: 'development & maintenance',
-    brand: 'strategy & identity',
-    marketing: 'digital & content',
-    product: 'design & strategy'
-};</pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Services Overview -->
-    <div class="bg-gray-900 py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-left">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                    Complete Digital Solutions
-                </h2>
-                <p class="mt-4 text-lg text-gray-300 max-w-3xl">
-                    Every service you need to establish, grow, and optimize your digital presence
-                </p>
-            </div>
-
-            <div class="mt-20 grid grid-cols-1 gap-12 lg:grid-cols-2">
-                <a href="{{ route('services') }}#web-development" 
-                   class="group relative bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-blue-400 opacity-0 rounded-full blur-lg group-hover:opacity-50 transition-opacity"></div>
-                    <div class="relative">
-                        <div class="text-blue-400 mb-4">
-                            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Web Solutions</h3>
-                        <p class="mt-2 text-gray-300">From simple business websites to complex web applications. Development, maintenance, and optimization.</p>
-                    </div>
-                </a>
-
-                <a href="{{ route('services') }}#branding" 
-                   class="group relative bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-blue-400 opacity-0 rounded-full blur-lg group-hover:opacity-50 transition-opacity"></div>
-                    <div class="relative">
-                        <div class="text-blue-400 mb-4">
-                            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Brand & Identity</h3>
-                        <p class="mt-2 text-gray-300">Strategic brand development, visual identity design, and brand voice creation.</p>
-                    </div>
-                </a>
-
-                <a href="{{ route('services') }}#marketing" 
-                   class="group relative bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-blue-400 opacity-0 rounded-full blur-lg group-hover:opacity-50 transition-opacity"></div>
-                    <div class="relative">
-                        <div class="text-blue-400 mb-4">
-                            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Digital Marketing</h3>
-                        <p class="mt-2 text-gray-300">SEO optimization, content strategy, social media management, and digital advertising.</p>
-                    </div>
-                </a>
-
-                <a href="{{ route('services') }}#product-design" 
-                   class="group relative bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-blue-400 opacity-0 rounded-full blur-lg group-hover:opacity-50 transition-opacity"></div>
-                    <div class="relative">
-                        <div class="text-blue-400 mb-4">
-                            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Product Strategy</h3>
-                        <p class="mt-2 text-gray-300">User experience design, product strategy, and digital product development.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Featured Work with more stylized layout -->
-    <div class="bg-gray-800 py-24 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-50">
-            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                <pattern id="project-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5"/>
-                </pattern>
-                <rect width="100" height="100" fill="url(#project-grid)" />
-            </svg>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                    Featured Work
-                </h2>
-                <p class="mt-4 text-lg text-gray-300">
-                    Some of our recent projects
-                </p>
-            </div>
-
-            <div class="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <a href="{{ route('portfolio') }}" class="group relative">
-                    <div class="relative h-80 w-full overflow-hidden rounded-lg bg-gray-800">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80" 
-                             alt="E-commerce Platform" 
-                             class="h-full w-full object-cover object-center transition-opacity group-hover:opacity-75">
-                        <div class="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-75 transition-opacity"></div>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <span class="text-white text-sm font-medium">View Project</span>
-                        </div>
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-white">Modern E-commerce Platform</h3>
-                    <p class="text-sm text-gray-300">Web Development</p>
-                </a>
-
-                <!-- Add 2 more featured projects here -->
-            </div>
-
-            <div class="mt-12 text-center">
-                <a href="{{ route('portfolio') }}" 
-                   class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-blue-400 hover:bg-blue-500">
-                    View All Projects
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Why Choose Us -->
-    <div class="bg-gray-900 py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                    Why Choose PixelCraft
-                </h2>
-                <p class="mt-4 max-w-2xl text-lg text-gray-300 lg:mx-auto">
-                    Small team, big impact. We bring enterprise-level expertise with startup agility.
-                </p>
-            </div>
-
-            <div class="mt-20">
-                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-black">
-                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-white">Direct Communication</h3>
-                            <p class="mt-2 text-gray-300">
-                                Work directly with our core team. No account managers, no bureaucracy.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-black">
-                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-white">Fast Execution</h3>
-                            <p class="mt-2 text-gray-300">
-                                Small team means quick decisions and faster implementation of your ideas.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Add 2 more advantages -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CTA Section with more style -->
-    <div class="bg-gray-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                <pattern id="cta-grid" width="15" height="15" patternUnits="userSpaceOnUse">
-                    <path d="M 15 0 L 0 0 0 15" fill="none" stroke="currentColor" stroke-width="0.5"/>
-                </pattern>
-                <rect width="100" height="100" fill="url(#cta-grid)" />
-            </svg>
-        </div>
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 relative">
-            <div class="bg-gray-800 rounded-lg shadow-xl p-8">
-                <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-                    <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                        <span class="block">Ready to get started?</span>
-                        <span class="block text-blue-400">Let's build something great.</span>
-                    </h2>
-                    <div class="mt-8 lg:mt-0 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="{{ route('contact') }}" 
-                           class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-blue-400 hover:bg-blue-500">
-                            Contact Us
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="{{ route('about') }}" 
+                           class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-gradient-to-r from-purple-400 to-teal-400 hover:from-purple-500 hover:to-teal-500 transform hover:scale-105 transition-all duration-300 glow-button">
+                            About Me
                         </a>
                         <a href="{{ route('portfolio') }}" 
-                           class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-600">
-                            View Portfolio
+                           class="inline-flex items-center justify-center px-8 py-3 border-2 border-teal-400 text-base font-medium rounded-md text-teal-400 hover:bg-teal-400 hover:text-black transform hover:scale-105 transition-all duration-300">
+                            Previous Work
                         </a>
+                    </div>
+                </div>
+                <div class="mt-12 relative lg:mt-0 lg:col-span-5">
+                    <div class="transform hover:scale-105 transition-all duration-500 relative z-10">
+                        <div class="relative rounded-lg overflow-hidden shadow-cosmic">
+                            <div class="absolute inset-0 bg-gradient-to-br from-purple-500 via-teal-500 to-pink-500 opacity-50 animate-gradient"></div>
+                            <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-auto rounded-lg">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Featured Work Section -->
+    <div class="bg-black py-24 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-teal-900/20 to-pink-900/20"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl glow-text">
+                    Featured Work
+                </h2>
+                <p class="mt-4 text-xl text-gray-300">
+                    Exploring space science through various mediums
+                </p>
+            </div>
+
+            <div class="mt-20 grid grid-cols-1 gap-12 lg:grid-cols-3">
+                <!-- Interviews -->
+                <div class="group relative bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
+                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-purple-400 opacity-0 rounded-full blur-lg group-hover:opacity-20 transition-opacity"></div>
+                    <div class="relative">
+                        <svg class="h-12 w-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-white">Media Appearances</h3>
+                        <p class="mt-2 text-gray-300">Featured on major networks discussing space exploration and science communication.</p>
+                    </div>
+                </div>
+
+                <!-- Lectures -->
+                <div class="group relative bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
+                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-purple-400 opacity-0 rounded-full blur-lg group-hover:opacity-20 transition-opacity"></div>
+                    <div class="relative">
+                        <svg class="h-12 w-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-white">Public Speaking</h3>
+                        <p class="mt-2 text-gray-300">Keynote speeches and presentations at conferences worldwide on space science and exploration.</p>
+                    </div>
+                </div>
+
+                <!-- Creative Work -->
+                <div class="group relative bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
+                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-purple-400 opacity-0 rounded-full blur-lg group-hover:opacity-20 transition-opacity"></div>
+                    <div class="relative">
+                        <svg class="h-12 w-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-white">Creative Projects</h3>
+                        <p class="mt-2 text-gray-300">Experimental and artistic collaborations exploring the intersection of space and creativity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-black py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-purple-900 via-teal-900 to-pink-900 rounded-lg shadow-2xl overflow-hidden">
+                <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                            <span class="block">Ready to explore?</span>
+                            <span class="block text-purple-300">Let's connect and talk space.</span>
+                        </h2>
+                    </div>
+                    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                        <div class="inline-flex rounded-md shadow">
+                            <a href="{{ route('contact') }}" 
+                               class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-black bg-purple-400 hover:bg-purple-500 transition-all duration-300 glow-button">
+                                Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add required styles -->
+    @push('styles')
+    <style>
+        .text-gradient {
+            background: linear-gradient(to right, 
+                #a78bfa 0%,
+                #2dd4bf 20%,
+                #f472b6 40%,
+                #2dd4bf 60%,
+                #a78bfa 80%,
+                #a78bfa 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: smoothShine 8s linear infinite;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(167, 139, 250, 0.5),
+                         0 0 20px rgba(45, 212, 191, 0.3),
+                         0 0 30px rgba(244, 114, 182, 0.2);
+        }
+        .glow-button {
+            box-shadow: 0 0 15px rgba(167, 139, 250, 0.3),
+                        0 0 30px rgba(45, 212, 191, 0.2);
+            background: linear-gradient(to right,
+                #a78bfa 0%,
+                #2dd4bf 20%,
+                #f472b6 40%,
+                #2dd4bf 60%,
+                #a78bfa 80%,
+                #a78bfa 100%
+            );
+            background-size: 200% 100%;
+            animation: smoothShine 6s linear infinite;
+        }
+        .shadow-cosmic {
+            box-shadow: 0 0 30px rgba(167, 139, 250, 0.3),
+                        0 0 60px rgba(45, 212, 191, 0.2);
+        }
+        @keyframes smoothShine {
+            from {
+                background-position: 100% 50%;
+            }
+            to {
+                background-position: -100% 50%;
+            }
+        }
+        @keyframes nebula {
+            0% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.4; }
+            100% { transform: scale(1); opacity: 0.3; }
+        }
+        .animate-nebula {
+            animation: nebula 20s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(30px, -30px) rotate(180deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        .floating-orb {
+            top: 15%;
+            left: 10%;
+            animation: float 20s ease-in-out infinite;
+        }
+        .floating-orb-2 {
+            top: 40%;
+            right: 15%;
+            animation: float 25s ease-in-out infinite reverse;
+        }
+        .floating-orb-3 {
+            bottom: 20%;
+            left: 30%;
+            animation: float 22s ease-in-out infinite;
+        }
+        #stars {
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+            background-repeat: repeat;
+            animation: twinkle 7s ease-in-out infinite;
+        }
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0.3; }
+        }
+        .floating-earth {
+            animation: floatingEarth 30s ease-in-out infinite;
+            filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 30px rgba(78, 142, 229, 0.3));
+            opacity: 0.8;
+        }
+        @keyframes floatingEarth {
+            0%, 100% {
+                transform: rotate(0deg) scale(1);
+            }
+            25% {
+                transform: rotate(3deg) scale(1.02);
+            }
+            50% {
+                transform: rotate(-2deg) scale(0.98);
+            }
+            75% {
+                transform: rotate(1deg) scale(1.02);
+            }
+        }
+    </style>
+    @endpush
 </x-app-layout> 

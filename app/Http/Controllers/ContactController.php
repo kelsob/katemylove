@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormSubmission;
 
 class ContactController extends Controller
 {
@@ -17,16 +18,14 @@ class ContactController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'project_type' => 'required|string',
-            'budget' => 'required|string',
+            'inquiry_type' => 'required|string|in:speaking,collaboration,media,other',
             'message' => 'required|string',
         ]);
 
-        // Here you would typically:
-        // 1. Send an email notification
-        // 2. Store the inquiry in the database
-        // 3. Send an auto-response to the client
+        // Send email notification
+        Mail::to('contact@kateonearth.com')->send(new ContactFormSubmission($validated));
 
-        return back()->with('success', 'Thank you for your message. We\'ll be in touch soon!');
+        // Redirect back with success message
+        return redirect()->back()->with('success', 'Thank you for your message! I will get back to you soon.');
     }
 } 
