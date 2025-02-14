@@ -1,39 +1,15 @@
 <x-app-layout>
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-black">
+        <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
+    </div>
+    
     <!-- Hero Section with Space Theme -->
-    <div class="relative min-h-screen flex items-center">
-        <!-- Animated Nebula Background -->
-        <div class="absolute inset-0 z-0 overflow-hidden">
-            <div class="absolute inset-0 bg-black">
-                <!-- Animated nebula effect using gradients and animation -->
-                <div class="absolute inset-0 opacity-30 animate-nebula">
-                    <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-transparent to-pink-900"></div>
-                    <div class="absolute inset-0 bg-gradient-to-tl from-blue-900 via-transparent to-indigo-900"></div>
-                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-900/50 via-transparent to-teal-600/30"></div>
-                    <div class="absolute inset-0 bg-gradient-radial from-purple-900/20 via-transparent to-transparent"></div>
-                </div>
-                <!-- Twinkling stars effect -->
-                <div class="absolute inset-0" id="stars"></div>
-                <!-- Floating orbs with enhanced gradients -->
-                <div class="absolute inset-0 overflow-hidden">
-                    <div class="floating-orb absolute h-32 w-32 rounded-full bg-gradient-to-r from-teal-500/20 via-purple-500/20 to-pink-500/20 blur-xl"></div>
-                    <div class="floating-orb-2 absolute h-48 w-48 rounded-full bg-gradient-to-r from-pink-500/20 via-teal-500/20 to-purple-500/20 blur-xl"></div>
-                    <div class="floating-orb-3 absolute h-24 w-24 rounded-full bg-gradient-to-r from-purple-500/20 via-teal-500/20 to-pink-500/20 blur-xl"></div>
-                </div>
-            </div>
-        </div>
+    <div class="relative min-h-screen flex items-center z-20">
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
                 <div class="lg:col-span-7 space-y-8 relative">
-                    <!-- Earth Background -->
-                    <div class="absolute right-56 -top-12 pointer-events-none">
-                        <img 
-                            src="{{ asset('images/space/earth.png') }}" 
-                            alt="Earth Background" 
-                            class="w-48 floating-earth"
-                            style="mix-blend-mode: screen;"
-                        >
-                    </div>
                     <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl relative z-10">
                         <span class="block xl:inline">Kate on Earth:</span>
                         <span class="block text-gradient xl:inline glow-text">Communicating the Wonders of Space</span>
@@ -43,11 +19,11 @@
                     </p>
                     <div class="mt-8 flex flex-col sm:flex-row gap-4">
                         <a href="{{ route('about') }}" 
-                           class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-gradient-to-r from-purple-400 to-teal-400 hover:from-purple-500 hover:to-teal-500 transform hover:scale-105 transition-all duration-300 glow-button">
+                           class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black transform hover:scale-105 transition-all duration-300 glow-button">
                             About Me
                         </a>
                         <a href="{{ route('portfolio') }}" 
-                           class="inline-flex items-center justify-center px-8 py-3 border-2 border-teal-400 text-base font-medium rounded-md text-teal-400 hover:bg-teal-400 hover:text-black transform hover:scale-105 transition-all duration-300">
+                           class="inline-flex items-center justify-center px-8 py-3 border-2 border-teal-400 text-base font-medium rounded-md text-teal-400  hover:text-black transform hover:scale-105 transition-all duration-300">
                             Previous Work
                         </a>
                     </div>
@@ -65,12 +41,12 @@
     </div>
 
     <!-- Featured Work Section -->
-    <div class="bg-black py-24 relative overflow-hidden">
+    <div class="bg-black py-24 relative overflow-hidden z-20">
         <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-teal-900/20 to-pink-900/20"></div>
+            <div class="absolute inset-0"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
             <div class="text-center">
                 <h2 class="text-3xl font-extrabold text-white sm:text-4xl glow-text">
                     Featured Work
@@ -118,25 +94,24 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="bg-black py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-r from-purple-900 via-teal-900 to-pink-900 rounded-lg shadow-2xl overflow-hidden">
-                <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
-                    <div>
-                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                            <span class="block">Ready to explore?</span>
-                            <span class="block text-purple-300">Let's connect and talk space.</span>
-                        </h2>
-                    </div>
-                    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                        <div class="inline-flex rounded-md shadow">
-                            <a href="{{ route('contact') }}" 
-                               class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-black bg-purple-400 hover:bg-purple-500 transition-all duration-300 glow-button">
-                                Get in Touch
-                            </a>
+            <!-- Call to Action -->
+        <div class="py-16 z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gradient-to-r from-purple-900 via-teal-900 to-pink-900 rounded-lg shadow-2xl overflow-hidden">
+                    <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
+                        <div>
+                            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                                <span class="block">Ready to explore?</span>
+                                <span class="block text-purple-300">Let's connect and talk space.</span>
+                            </h2>
+                        </div>
+                        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                            <div class="inline-flex rounded-md shadow">
+                                <a href="{{ route('contact') }}" 
+                                class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-black bg-purple-400 hover:bg-purple-500 transition-all duration-300 glow-button">
+                                    Get in Touch
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -253,6 +228,7 @@
                 transform: rotate(1deg) scale(1.02);
             }
         }
+
     </style>
     @endpush
 </x-app-layout> 
