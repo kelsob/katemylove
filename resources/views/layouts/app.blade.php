@@ -49,20 +49,17 @@
         <!-- Page Specific Styles -->
         @stack('styles')
     </head>
-    <body class="font-sans antialiased min-h-screen  text-white">
+    <body class="font-sans antialiased min-h-screen text-white">
         <div class="min-h-screen">
             @include('layouts.navigation')
 
             <!-- Flash Messages -->
             <x-flash-message />
 
-
-            
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
-
 
             <!-- Footer -->
             <footer class="border-t border-gray-800 relative z-30">

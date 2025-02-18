@@ -1,6 +1,6 @@
 <x-app-layout>
     <!-- Background Image -->
-    <div class="absolute inset-0 bg-black">
+    <div class="absolute inset-0 bg-black z-0">
         <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
     </div>
     
