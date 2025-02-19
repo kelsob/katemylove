@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,11 +16,6 @@
 
         <!-- Base Styles -->
         <style>
-            body {
-                font-family: 'Space Grotesk', sans-serif;
-                background-color: black;
-                color: white;
-            }
             
             /* Smooth scrolling */
             html {
@@ -49,7 +44,7 @@
         <!-- Page Specific Styles -->
         @stack('styles')
     </head>
-    <body class="font-sans antialiased min-h-screen text-white">
+    <body class="font-sans antialiased min-h-screen">
         <div class="min-h-screen">
             @include('layouts.navigation')
 

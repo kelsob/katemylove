@@ -2,7 +2,7 @@
 
 return [
     'profile' => [
-        'kate' => 'https://picsum.photos/seed/kate1/800/1000',
+        'kate' => 'images\kate\kate-navidbaraty-TPS.jpg',
         'kate_full' => 'https://picsum.photos/seed/kate2/600/800',
     ],
     'media' => [

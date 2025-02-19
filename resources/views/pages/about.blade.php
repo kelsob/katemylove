@@ -1,162 +1,39 @@
 <x-app-layout>
-    <!-- Hero Section -->
-    <div class="relative pt-24 pb-16 overflow-hidden bg-black">
-        <!-- Fixed star field background -->
-        <div class="absolute inset-0 bg-black">
-            <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
-        </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
-                <div class="lg:col-span-7">
-                    <h1 class="text-4xl font-extrabold text-warm-yellow sm:text-5xl md:text-6xl glow-text">
-                        About Kate
-                    </h1>
-                    <div class="mt-6 prose prose-lg prose-invert">
-                        <p class="text-xl text-warm-gray">
-                            As a public speaker, writer, and communications strategist, I bridge the gap between complex space science 
-                            and public understanding. My work with the Planetary Society and various space organizations has allowed me 
-                            to share the wonders of space exploration with audiences worldwide.
-                        </p>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    <h1 class="text-4xl font-bold mb-4 text-spaceOrange-600">About Kate Howells</h1>
+                    
+                    <div class="mb-8">
+                        <img src="{{ asset('images/kate-howells.jpg') }}" alt="Kate Howells" class="w-full h-64 object-cover object-center rounded-lg shadow-md">
                     </div>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:col-span-5">
-                    <div class="relative max-w-md mx-auto">
-                        <div class="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-500">
-                            <img src="{{ config('images.profile.kate_full') }}" alt="Kate" class="relative z-10 w-full h-full object-cover rounded-lg shadow-cosmic">
+
+                    <section class="mb-12">
+                        <h2 class="text-2xl font-bold mb-4 text-spacePurple-600">Background</h2>
+                        <div class="bg-spaceYellow-100 p-6 rounded-lg shadow-md">
+                            <p class="text-lg mb-4">Kate Howells is a passionate science communicator with a deep love for space exploration. With a background in astrophysics and a talent for engaging audiences, Kate has dedicated her career to making complex scientific concepts accessible and exciting for people of all ages.</p>
+                            <p class="text-lg">Born and raised in Guelph, Ontario, Kate's fascination with the cosmos began at a young age. She pursued her dreams by earning a degree in astrophysics from the University of Toronto, where she honed her skills in research and data analysis.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </section>
 
-    <!-- Career Timeline -->
-    <div class=" py-24 relative">
-
-        
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-warm-yellow mb-12 glow-text text-center">Highlights</h2>
-            
-            <div class="relative">
-                <div class="absolute left-1/2 transform -translate-x-px h-full w-1 glow-line"></div>
-
-                <div class="space-y-16">
-                    <!-- Current Role -->
-                    <div class="relative">
-                        <div class="relative flex items-center justify-between">
-                            <div class="flex-1 text-right pr-8">
-                                <h3 class="text-xl font-bold text-warm-yellow">Communications Director</h3>
-                                <p class="text-warm-orange">The Planetary Society</p>
-                                <p class="text-warm-gray">2020 - Present</p>
-                            </div>
-                            <div class="w-4 h-4 rounded-full bg-warm-orange border-4 border-black relative z-10 glow-point"></div>
-                            <div class="flex-1 pl-8">
-                                <p class="text-warm-gray">Leading science communication initiatives and public outreach programs. Developing strategies to make space science accessible to diverse audiences.</p>
-                            </div>
+                    <section class="mb-12">
+                        <h2 class="text-2xl font-bold mb-4 text-spacePurple-600">Experience</h2>
+                        <div class="bg-spaceOrange-100 p-6 rounded-lg shadow-md">
+                            <p class="text-lg mb-4">Throughout her career, Kate has worked with various organizations, including the Canadian Space Agency and the Ontario Science Centre, to develop and deliver captivating educational programs. Her unique ability to translate complex scientific concepts into engaging stories has made her a sought-after speaker and consultant.</p>
+                            <p class="text-lg">In addition to her work in science communication, Kate is an active member of the astronomical community. She has contributed to several research projects and has published articles in popular science magazines, sharing her insights and enthusiasm with a wide audience.</p>
                         </div>
-                    </div>
+                    </section>
 
-                    <!-- Previous Roles -->
-                    <div class="relative">
-                        <div class="relative flex items-center justify-between">
-                            <div class="flex-1 text-right pr-8">
-                                <h3 class="text-xl font-bold text-warm-yellow">Science Communicator</h3>
-                                <p class="text-warm-orange">Space Science Institute</p>
-                                <p class="text-warm-gray">2017 - 2020</p>
-                            </div>
-                            <div class="w-4 h-4 rounded-full bg-warm-orange border-4 border-black relative z-10 glow-point"></div>
-                            <div class="flex-1 pl-8">
-                                <p class="text-warm-gray">Developed and delivered educational programs about space exploration. Created content for museums and science centers.</p>
-                            </div>
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 text-spacePurple-600">Mission</h2>
+                        <div class="bg-spacePeach-100 p-6 rounded-lg shadow-md">
+                            <p class="text-lg mb-4">Kate's mission is to inspire curiosity and wonder about the universe, encouraging people to explore the mysteries of space and appreciate the beauty of science. Through her engaging presentations, workshops, and writing, she aims to spark a lifelong love for learning and discovery in her audiences.</p>
+                            <p class="text-lg">With a warm and approachable style, Kate creates an inclusive environment where everyone feels welcome to ask questions and share their own experiences. Her passion for space science is contagious, and she is committed to empowering the next generation of scientists and explorers.</p>
                         </div>
-                    </div>
-
-                    <div class="relative">
-                        <div class="relative flex items-center justify-between">
-                            <div class="flex-1 text-right pr-8">
-                                <h3 class="text-xl font-bold text-warm-yellow">Science Writer</h3>
-                                <p class="text-warm-orange">Freelance</p>
-                                <p class="text-warm-gray">2015 - 2017</p>
-                            </div>
-                            <div class="w-4 h-4 rounded-full bg-warm-orange border-4 border-black relative z-10 glow-point"></div>
-                            <div class="flex-1 pl-8">
-                                <p class="text-warm-gray">Contributed articles to major science publications. Covered space missions, astronomical discoveries, and space technology developments.</p>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Approach Section -->
-    <div class="py-24 relative overflow-hidden">
-
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="relative rounded-2xl overflow-hidden">
-                <div class="relative px-8 py-12 sm:px-12 sm:py-16">
-                    <h2 class="text-3xl font-bold text-warm-yellow mb-6 glow-text">My Approach</h2>
-                    <div class="prose prose-lg prose-invert">
-                        <p class="text-warm-gray">
-                            My work is all about empowering people through science, inspiring appreciation for the natural world, and bringing creativity and humour into science outreach and education.
-                        </p>
-                        <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('images/space/mercury.png') }}" alt="Planet" class="w-8 h-6">
-                                </div>
-                                <p class="ml-3 text-warm-gray">Making complex science accessible and engaging</p>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('images/space/venus.png') }}" alt="Planet" class="h-6 w-8">
-                                </div>
-                                <p class="ml-3 text-warm-gray">Fostering curiosity about space exploration</p>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('images/space/earth.png') }}" alt="Planet" class="h-6 w-8">
-                                </div>
-                                <p class="ml-3 text-warm-gray">Building bridges between scientists and the public</p>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('images/space/moon.png') }}" alt="Planet" class="h-6 w-8">
-                                </div>
-                                <p class="ml-3 text-warm-gray">Inspiring the next generation of space explorers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add required styles -->
-    @push('styles')
-    <style>
-        .text-warm-yellow {
-            color: #FFD700; /* Warm yellow */
-        }
-        .text-warm-orange {
-            color: #FF8C00; /* Warm orange */
-        }
-        .text-warm-gray {
-            color: #D3D3D3; /* Light warm gray */
-        }
-        .glow-text {
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5),
-                         0 0 20px rgba(255, 140, 0, 0.3),
-                         0 0 20px rgba(255, 140, 0, 0.3);
-        }
-        .shadow-cosmic {
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3),
-                        0 0 60px rgba(255, 140, 0, 0.2);
-        }
-        .glow-point {
-            box-shadow: 0 0 15px currentColor;
-        }
-    </style>
-    @endpush
 </x-app-layout> 

@@ -4,35 +4,180 @@
         <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
     </div>
     
-    <!-- Hero Section with Space Theme -->
-    <div class="relative min-h-screen flex items-center z-20">
-
-        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hero Section -->
+    <div class="relative pt-24 pb-16 overflow-hidden bg-gradient-to-b from-spaceOrange-900 to-spaceOrange-700">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
-                <div class="lg:col-span-7 space-y-8 relative">
-                    <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl relative z-10">
-                        <span class="block xl:inline">Kate on Earth:</span>
-                        <span class="block text-gradient xl:inline glow-text">Communicating the Wonders of Space</span>
+                <div class="lg:col-span-7">
+                    <h1 class="text-4xl font-extrabold text-spacePeach-100 sm:text-5xl md:text-6xl">
+                        Bringing Space Science Down to Earth
                     </h1>
-                    <p class="mt-3 text-xl text-gray-300 sm:mt-4">
-                        Public speaker, writer, and communications strategist bringing space science down to Earth.
-                    </p>
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                        <a href="{{ route('about') }}" 
-                           class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black transform hover:scale-105 transition-all duration-300 glow-button">
-                            About Me
-                        </a>
-                        <a href="{{ route('portfolio') }}" 
-                           class="inline-flex items-center justify-center px-8 py-3 border-2 border-teal-400 text-base font-medium rounded-md text-teal-400  hover:text-black transform hover:scale-105 transition-all duration-300">
-                            Previous Work
+                    <div class="mt-6 prose prose-lg text-spacePeach-200">
+                        <p>
+                            Discover the wonders of the universe with Kate Howells, a passionate science communicator dedicated to making space exploration accessible and engaging for all.
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <a href="{{ route('about') }}" class="inline-block bg-spacePurple-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-spacePurple-700">
+                            Learn More
                         </a>
                     </div>
                 </div>
-                <div class="mt-12 relative lg:mt-0 lg:col-span-5">
-                    <div class="transform hover:scale-105 transition-all duration-500 relative z-10">
-                        <div class="relative rounded-lg overflow-hidden shadow-cosmic">
-                            <div class="absolute inset-0 bg-gradient-to-br from-purple-500 via-teal-500 to-pink-500 opacity-50 animate-gradient"></div>
-                            <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-auto rounded-lg">
+                <div class="mt-12 lg:mt-0 lg:col-span-5">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-500">
+                            <img src="{{ config('images.profile.kate_full') }}" alt="Kate" class="relative z-10 w-full h-full object-cover rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="py-24 bg-gradient-to-b from-spaceYellow-100 to-spaceYellow-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-spacePurple-600 font-semibold tracking-wide uppercase">Services</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-spaceOrange-800 sm:text-4xl">
+                    Igniting Curiosity Through Engaging Communication
+                </p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceOrange-100 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spacePurple-500 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-spacePurple-800 tracking-tight">Public Speaking</h3>
+                            <p class="mt-5 text-base text-spaceOrange-600">
+                                Engaging talks that inspire audiences to explore the wonders of space and science.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceOrange-100 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spacePurple-500 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-spacePurple-800 tracking-tight">Writing</h3>
+                            <p class="mt-5 text-base text-spaceOrange-600">
+                                Crafting compelling articles and content that make complex space topics accessible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceOrange-100 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spacePurple-500 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-spacePurple-800 tracking-tight">Consulting</h3>
+                            <p class="mt-5 text-base text-spaceOrange-600">
+                                Providing expert guidance on science communication strategies and outreach programs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="py-24 bg-gradient-to-b from-spacePeach-100 to-spacePeach-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-spacePurple-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-spaceOrange-800 sm:text-4xl">
+                    What People Are Saying
+                </p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-spacePurple-800">
+                                    Emily Selman
+                                </p>
+                                <div class="flex space-x-1 text-sm text-spaceOrange-500">
+                                    <span>Planetary Society Member</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-spaceOrange-600">
+                            <p>
+                                "Kate's passion for space is contagious. Her talks always leave me feeling inspired and eager to learn more."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-spacePurple-800">
+                                    Michael Foster
+                                </p>
+                                <div class="flex space-x-1 text-sm text-spaceOrange-500">
+                                    <span>Science Museum Curator</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-spaceOrange-600">
+                            <p>
+                                "Kate's ability to make complex science accessible is unparalleled. She's a true asset to any educational program."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-spacePurple-800">
+                                    Jared Keller
+                                </p>
+                                <div class="flex space-x-1 text-sm text-spaceOrange-500">
+                                    <span>Astronomy Club President</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-spaceOrange-600">
+                            <p>
+                                "Our club members were thrilled to have Kate as a guest speaker. Her engaging style kept everyone captivated."
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -101,8 +246,8 @@
                     <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
                         <div>
                             <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                                <span class="block">Ready to explore?</span>
-                                <span class="block text-purple-300">Let's connect and talk space.</span>
+                                <span class="block">Let's connect and talk space.</span>
+                                <span class="block text-purple-300">I am available for writing, editing, speaking engagements, strategy consulting, and many other forms of freelance work. </span>
                             </h2>
                         </div>
                         <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
