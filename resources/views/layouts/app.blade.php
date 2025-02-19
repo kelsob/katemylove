@@ -44,8 +44,14 @@
         <!-- Page Specific Styles -->
         @stack('styles')
     </head>
-    <body class="font-sans antialiased min-h-screen">
-        <div class="min-h-screen">
+    <body class="font-sans antialiased min-h-screen relative">
+        <!-- Fixed Background -->
+        <div class="fixed inset-0 -z-10">
+            <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Main Content -->
+        <div class="relative z-10">
             @include('layouts.navigation')
 
             <!-- Flash Messages -->

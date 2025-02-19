@@ -6,26 +6,25 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('home') }}">
-                    <span class="text-spaceOrange">Kate</span><span class="text-spacePeach font-space-crusaders">Howells</span>
+                    <span class="text-spacePeach">Kate</span><span class="text-spaceOrange font-space-crusaders">Howells</span>
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:ms-10 sm:flex items-center">
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="bg-spacePurple text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block"
-                    >
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="bg-spaceCerulean text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
                         {{ __('Home') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="bg-spacePurple text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
+                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="bg-spaceCerulean text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
                         {{ __('About') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')" class="bg-spacePurple text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
+                    <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')" class="bg-spaceCerulean text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
                         {{ __('Previous Work') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('services')" :active="request()->routeIs('services')" class="bg-spacePurple text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
+                    <x-nav-link :href="route('services')" :active="request()->routeIs('services')" class="bg-spaceCerulean text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
                         {{ __('Services') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="bg-spacePurple text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
+                    <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="bg-spaceCerulean text-spacePeach hover:text-purple-400 rounded-lg px-3 py-1 inline-block">
                         {{ __('Contact') }}
                     </x-nav-link>
                 </div>
