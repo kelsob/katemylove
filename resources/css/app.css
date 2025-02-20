@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    /* Default body text */
+    body {
+        @apply font-sans;
+    }
+
+    /* Navigation and Logo elements */
+    nav a, .logo {
+        @apply font-space-crusaders;
+    }
+
+    /* All headings */
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-eurostyle;
+    }
+
+    /* Override specific heading if needed */
+    .logo h1, .logo h2, .logo h3, 
+    nav h1, nav h2, nav h3 {
+        @apply font-space-crusaders;
+    }
+}
+
 @font-face {
     font-family: 'SpaceCrusaders';
     src: url('/fonts/SpaceCrusaders.ttf') format('truetype');

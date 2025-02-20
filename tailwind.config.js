@@ -12,8 +12,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'space-crusaders': ['SpaceCrusaders'],
-
+                'sans': ['Titillium Web', ...defaultTheme.fontFamily.sans],
+                'eurostyle': ['EuroStyle', 'sans-serif'],
+                'space-crusaders': ['SpaceCrusaders', 'sans-serif'],
+                'titillum-web': ['Titillium Web', 'sans-serif'],
             },
             colors: {
                 purple: {
@@ -41,12 +43,29 @@ module.exports = {
                     800: '#1f2937',
                     900: '#111827',
                 },
-                spaceOrange: '#E8A317',
-                spacePeach: '#E6B89C',
-                spaceCerulean: '#437F97',
-                persianGreen: '#1B998B',
-                spaceYellow: '#f59e0b',
-                spaceRed: '#ef4444',
+                'spaceOrange': {
+                    1: '#dd5227',
+                    2: '#b62625',
+                },
+                'spaceRed': {
+                    1: '#931924',
+                    2: '#6f0c20',
+                },
+                'spaceTeal': {
+                    1: '#c7e6e1',
+                    2: '#a0cccd',
+                    3: '#3b8993',
+                    4: '#224c48',
+                    5: '#133131',
+                },
+                'spaceWhite': {
+                    1: '#e8efe8',
+                    2: '#d4ded6',
+                },
+                'spaceBrown': {
+                    1: '#3d2025',
+                    2: '#220d14',
+                }
             },
             animation: {
                 'nebula': 'nebula 20s ease-in-out infinite',
