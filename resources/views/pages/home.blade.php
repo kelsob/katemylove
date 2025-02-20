@@ -115,14 +115,45 @@
                 <!-- Books -->
                 <div class="bg-spaceRed-2 rounded-lg p-8 shadow-xl">
                     <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Books</h3>
-                    <div class="space-y-6">
+                    <div class="space-y-8">
                         <div class="bg-spaceRed-1 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
-                            <p class="mt-2 text-spaceWhite-1">A comprehensive exploration of lunar bodies across our solar system.</p>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex-shrink-0 w-48 h-auto">
+                                    <img src="{{ asset('images/media/moons.png') }}" alt="Moons Book Cover" class="w-full h-full object-contain rounded-lg shadow-lg">
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
+                                    <p class="mt-2 text-spaceTeal-2 text-sm">ALMOST EVERY PLANET IN OUR SOLAR SYSTEM HAS ONE, SO WHY DO WE KNOW SO LITTLE ABOUT MOONS?</p>
+                                    <p class="mt-2 text-spaceWhite-1 text-sm">
+Join space evangelist Kate Howells on an interplanetary voyage to explore the mind-boggling moons of our solar system, from the volcanic hellscape of Io to the ice mountains and methane seas of Titan.
+Beautifully illustrated with space photography and artistic interpretations, and filled with unbelievable facts about our own galactic backyard, Moons is a perfect introduction to just how majestic and freaky our solar system can be.</p>
+                                    <div class="mt-4 flex items-center gap-4">
+                                        <a href="https://www.amazon.ca/Moons-Mysteries-Marvels-Solar-System/dp/0645817996?dib=eyJ2IjoiMSJ9.xD-qBKyQU7njwuffX-4WcPK2dIkJvFnkN4cZrO0YlwG-f9lUcaiVLRiG7SzK5UEnsWt_xbTDReLQT_uCTieAHgLDZ0UgiBvv5ayyI25lm1ZTPg9LgNcsyBiu7TCFwyOjO4Hie2kwr8m2hk4i0GB-vW553R8SCFjLoqy2Bcoxq4taTMI9BbrbVHeDzN-Z_bA52LuvK4XcTs1fpGs-TUkeKggMlc3KRGZH1h7RKpg7r04.gZGDaM4zTdTLMU_ZIKlncjlraeoD5yCume3Gtw443IU&dib_tag=se&qid=1740085137&refinements=p_27%3AKate+Howells&s=books&sr=1-11&text=Kate+Howells" 
+                                           target="_blank"
+                                           class="inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg hover:bg-spaceTeal-2 transition-colors duration-300">
+                                            Pre-Order
+                                        </a>
+                                        <span class="text-spaceTeal-1 font-bold">Releasing September 2025</span>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="bg-spaceRed-1 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceTeal-1">Space is Cool as F**k</h4>
-                            <p class="mt-2 text-spaceWhite-1">An engaging journey through the most fascinating aspects of space exploration.</p>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex-shrink-0 w-48 h-auto">
+                                    <img src="{{ asset('images/media/spaceiscoolasfuck.png') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-full object-contain rounded-lg shadow-lg">
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">Space is Cool as F**k</h4>
+                                    <p class="mt-2 text-spaceWhite-1 text-sm">From astrophysics to rocket science to the future of space exploration, Space Is Cool as F*ck explains everything you thought you'd never understand about the universe in plain-old filthy English. We're talking Big Bang, aliens, black holes, time travel, degenerate astronomers, and all the fundamental things you take for granted until you stop and think (like matter—what is this sh*t, really?)</p>
+                                    <a href="https://www.amazon.ca/Space-Cool-as-F-ck/dp/1524862975" 
+                                       target="_blank"
+                                       class="mt-4 inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg hover:bg-spaceTeal-2 transition-colors duration-300">
+                                        Buy
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,18 +162,69 @@
                 <div class="bg-spaceOrange-2 rounded-lg p-8 shadow-xl">
                     <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Featured Articles</h3>
                     <div class="space-y-6">
-                        <div class="bg-spaceOrange-1 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceWhite-1">How space explorers could grow habitats from fungus</h4>
-                            <p class="mt-2 text-spaceWhite-2">Exploring innovative solutions for sustainable space habitation.</p>
-                        </div>
-                        <div class="bg-spaceOrange-1 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceWhite-1">Are aliens real?</h4>
-                            <p class="mt-2 text-spaceWhite-2">A scientific examination of the possibility of extraterrestrial life.</p>
-                        </div>
-                        <div class="bg-spaceOrange-1 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceWhite-1">An exquisite cosmic coincidence</h4>
-                            <p class="mt-2 text-spaceWhite-2">Unveiling the remarkable alignments in our universe.</p>
-                        </div>
+                        <a href="https://www.planetary.org/articles/how-space-explorers-could-grow-habitats-from-fungus" 
+                           target="_blank" 
+                           class="block bg-spaceOrange-1 overflow-hidden rounded-lg transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="md:flex">
+                                <div class="md:w-1/2">
+                                    <div class="aspect-w-16 aspect-h-9 md:aspect-w-4 md:aspect-h-3">
+                                        <img src="{{ asset('images/media/fungus.png') }}" alt="Fungal Space Habitat Concept" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">How space explorers could grow habitats from fungus</h4>
+                                    <p class="mt-2 text-spaceTeal-2">Exploring innovative solutions for sustainable space habitation.</p>
+                                    <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
+                                        <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        <span class="text-spaceTeal-2">Feb 13, 2025 • The Planetary Society</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.planetary.org/articles/an-exquisite-cosmic-coincidence" 
+                           target="_blank" 
+                           class="block bg-spaceOrange-1 overflow-hidden rounded-lg transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="md:flex">
+                                <div class="md:w-1/2">
+                                    <div class="aspect-w-16 aspect-h-9 md:aspect-w-4 md:aspect-h-3">
+                                        <img src="{{ asset('images/media/cosmiccoincidence.png') }}" alt="Solar Eclipse" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">An exquisite cosmic coincidence</h4>
+                                    <p class="mt-2 text-spaceTeal-2">Unveiling the remarkable alignments in our universe.</p>
+                                    <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
+                                        <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        <span class="text-spaceTeal-2">March 19, 2024 • The Planetary Society</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.planetary.org/articles/are-aliens-real" 
+                           target="_blank" 
+                           class="block bg-spaceOrange-1 overflow-hidden rounded-lg transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="md:flex">
+                                <div class="md:w-1/2">
+                                    <div class="aspect-w-16 aspect-h-9 md:aspect-w-4 md:aspect-h-3">
+                                        <img src="{{ asset('images/media/arealiensreal.png') }}" alt="Tardigrade in Space" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">Are aliens real?</h4>
+                                    <p class="mt-2 text-spaceTeal-2">A scientific examination of the possibility of extraterrestrial life.</p>
+                                    <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
+                                        <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        <span class="text-spaceTeal-2">June 07, 2023 • The Planetary Society</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -151,16 +233,37 @@
                     <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Public Speaking and Media</h3>
                     <div class="space-y-6">
                         <div class="bg-spaceTeal-3 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceWhite-1">New York Times</h4>
-                            <p class="mt-2 text-spaceWhite-2">Expert commentary on space exploration and science communication.</p>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex-shrink-0 w-32 h-auto bg-spaceWhite-1 rounded-lg p-4">
+                                    <img src="{{ asset('images/media/nyt-logo.png') }}" alt="New York Times Logo" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-spaceWhite-1">New York Times</h4>
+                                    <p class="mt-2 text-spaceWhite-2">Expert commentary on space exploration and science communication.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceWhite-1">Royal Ontario Museum</h4>
-                            <p class="mt-2 text-spaceWhite-2">Educational presentations on space science and astronomy.</p>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex-shrink-0 w-32 h-auto bg-spaceWhite-1 rounded-lg p-4">
+                                    <img src="{{ asset('images/media/rom-logo.png') }}" alt="Royal Ontario Museum Logo" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-spaceWhite-1">Royal Ontario Museum</h4>
+                                    <p class="mt-2 text-spaceWhite-2">Educational presentations on space science and astronomy.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-spaceWhite-1">CBC</h4>
-                            <p class="mt-2 text-spaceWhite-2">Regular appearances discussing space news and discoveries.</p>
+                            <div class="flex items-center space-x-6">
+                                <div class="flex-shrink-0 w-32 h-auto bg-spaceWhite-1 rounded-lg p-4">
+                                    <img src="{{ asset('images/media/cbc-logo.png') }}" alt="CBC Logo" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-spaceWhite-1">CBC</h4>
+                                    <p class="mt-2 text-spaceWhite-2">Regular appearances discussing space news and discoveries.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
