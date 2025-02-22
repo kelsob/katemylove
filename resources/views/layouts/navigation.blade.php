@@ -2,32 +2,30 @@
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
-            <div class="flex">
-                <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('home') }}" class="logo flex flex-col leading-none -space-y-3">
-                        <span class="text-spaceTeal-2 text-3xl">Kate</span>
-                        <span class="text-spaceTeal-3 text-3xl">Howells</span>
-                    </a>
-                </div>
-                <!-- Navigation Links -->
-                <div class="hidden space-x-4 sm:ms-10 sm:flex items-center">
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-3 py-1 inline-block whitespace-nowrap">
-                        {{ __('Home') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-3 py-1 inline-block whitespace-nowrap">
-                        {{ __('About') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-3 py-1 inline-block whitespace-nowrap">
-                        {{ __('Previous Work') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('services')" :active="request()->routeIs('services')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-3 py-1 inline-block whitespace-nowrap">
-                        {{ __('Services') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-3 py-1 inline-block whitespace-nowrap">
-                        {{ __('Contact') }}
-                    </x-nav-link>
-                </div>
+            <!-- Logo -->
+            <div class="shrink-0 flex items-center">
+                <a href="{{ route('home') }}" class="logo flex flex-col leading-none -space-y-3">
+                    <span class="text-spaceTeal-2 text-5xl">Kate</span>
+                    <span class="text-spaceTeal-3 text-5xl">Howells</span>
+                </a>
+            </div>
+            <!-- Navigation Links -->
+            <div class="hidden space-x-4 sm:flex items-center">
+                <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                    {{ __('Home') }}
+                </x-nav-link>
+                <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                    {{ __('About') }}
+                </x-nav-link>
+                <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                    {{ __('Previous Work') }}
+                </x-nav-link>
+                <x-nav-link :href="route('services')" :active="request()->routeIs('services')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                    {{ __('Services') }}
+                </x-nav-link>
+                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                    {{ __('Contact') }}
+                </x-nav-link>
             </div>
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">

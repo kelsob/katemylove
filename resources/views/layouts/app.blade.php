@@ -98,9 +98,7 @@
                                 <span class="text-spaceTeal-2 text-3xl">Kate</span>
                                 <span class="text-spaceTeal-3 text-3xl">Howells</span>
                             </div>
-                            <p class="mt-4 text-spaceWhite-1">
-                                Bringing space science down to Earth through engaging communication and creative exploration.
-                            </p>
+                            
                         </div>
 
                         <!-- Quick Links -->

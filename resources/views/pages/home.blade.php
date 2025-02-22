@@ -5,12 +5,10 @@
         <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div class="lg:col-span-7">
                 <div class="p-8 rounded-xl bg-spaceOrange-2 backdrop-blur-sm shadow-lg shadow-black/50">
-                    <h1 class="text-4xl font-extrabold text-spaceTeal-1 sm:text-5xl md:text-6xl">
-                        Bringing Space Science Down to Earth
-                    </h1>
                     <div class="mt-6 prose prose-lg text-spaceTeal-1">
                         <p>
-                            Discover the wonders of the universe with Kate Howells, a passionate science communicator dedicated to making space exploration accessible and engaging for all.
+                        I’m a science communication expert who can help you connect with your audiences and reach your goals. Whether you need a writer, editor, speaker, or communications strategist, I’m here to help. 
+
                         </p>
                     </div>
                     <div class="mt-8">
@@ -32,16 +30,18 @@
     </div>
 
     <!-- Services Section -->
-    <div class="mx-4 sm:mx-8 my-16 p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
+    <div class="mx-4 sm:mx-8 p-8 my-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-spaceOrange-1 font-semibold tracking-wide uppercase">Services</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-spaceTeal-1 sm:text-4xl">
-                    Igniting Curiosity Through Engaging Communication
+            <div class="text-start flex items-center gap-8">
+                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders">
+                    Services
+                </h2>
+                <p class="text-xl text-spaceWhite-2">
+                I’m available as a freelancer to help with all kinds of projects, including:
                 </p>
             </div>
 
-            <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="pt-6">
                     <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
                         <div class="-mt-6">
@@ -54,7 +54,7 @@
                             </div>
                             <h3 class="mt-8 text-lg font-medium text-spaceTeal-1 tracking-tight">Public Speaking</h3>
                             <p class="mt-5 text-base text-spaceWhite-1">
-                                Engaging talks that inspire audiences to explore the wonders of space and science.
+                            Engaging talks tailored to your audience.
                             </p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             </div>
                             <h3 class="mt-8 text-lg font-medium text-spaceTeal-1 tracking-tight">Writing</h3>
                             <p class="mt-5 text-base text-spaceWhite-1">
-                                Crafting compelling articles and content that make complex space topics accessible.
+                            Compelling storytelling to make complex science topics accessible.
                             </p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                             </div>
                             <h3 class="mt-8 text-lg font-medium text-spaceTeal-1 tracking-tight">Consulting</h3>
                             <p class="mt-5 text-base text-spaceWhite-1">
-                                Providing expert guidance on science communication strategies and outreach programs.
+                            Expert guidance on non-profit and communications strategy
                             </p>
                         </div>
                     </div>
@@ -98,23 +98,45 @@
             </div>
         </div>
     </div>
-
+    <div class="py-8 my-8 z-20 px-4 sm:px-8">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-spaceTeal-4 rounded-lg shadow-2xl overflow-hidden">
+                <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-spaceWhite-1 sm:text-3xl">
+                            <span class="block">Get in touch.</span>
+                            <span class="block text-spaceTeal-2 text-lg">I’m always interested in opportunities to bring my skills to new projects. 
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                        <div class="inline-flex rounded-md shadow">
+                            <a href="{{ route('contact') }}" 
+                            class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-spaceWhite-1 bg-spaceOrange-2 hover:bg-spaceOrange-1 transition-all duration-300">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Featured Work Section -->
-    <div class="mx-4 sm:mx-8 my-16 p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
+    <div class="mx-4 sm:mx-8 p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
         <div class="mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-spaceWhite-1 sm:text-4xl glow-text">
+            <div class="text-start flex items-center gap-8">
+                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders">
                     My Work
                 </h2>
-                <p class="mt-4 text-xl text-spaceWhite-2">
-                    Exploring space science through various mediums
+                <p class="text-xl text-spaceWhite-2">
+                A few examples of my recent and most relevant work 
                 </p>
             </div>
 
-            <div class="mt-20 space-y-12">
+            <div class="mt-8 space-y-12">
                 <!-- Books -->
                 <div class="bg-spaceRed-2 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Books</h3>
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Books</h3>
                     <div class="space-y-8">
                         <div class="bg-spaceRed-1 p-6 rounded-lg">
                             <div class="flex items-center space-x-6">
@@ -123,7 +145,6 @@
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
-                                    <p class="mt-2 text-spaceTeal-2 text-sm">ALMOST EVERY PLANET IN OUR SOLAR SYSTEM HAS ONE, SO WHY DO WE KNOW SO LITTLE ABOUT MOONS?</p>
                                     <p class="mt-2 text-spaceWhite-1 text-sm">
 Join space evangelist Kate Howells on an interplanetary voyage to explore the mind-boggling moons of our solar system, from the volcanic hellscape of Io to the ice mountains and methane seas of Titan.
 Beautifully illustrated with space photography and artistic interpretations, and filled with unbelievable facts about our own galactic backyard, Moons is a perfect introduction to just how majestic and freaky our solar system can be.</p>
@@ -160,7 +181,7 @@ Beautifully illustrated with space photography and artistic interpretations, and
 
                 <!-- Featured Articles -->
                 <div class="bg-spaceOrange-2 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Featured Articles</h3>
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-6">Featured Articles</h3>
                     <div class="space-y-6">
                         <a href="https://www.planetary.org/articles/how-space-explorers-could-grow-habitats-from-fungus" 
                            target="_blank" 
@@ -173,7 +194,7 @@ Beautifully illustrated with space photography and artistic interpretations, and
                                 </div>
                                 <div class="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">How space explorers could grow habitats from fungus</h4>
-                                    <p class="mt-2 text-spaceTeal-2">Exploring innovative solutions for sustainable space habitation.</p>
+                                    <p class="mt-2 text-spaceTeal-2">A far-out but very real possibility for sustainable space habitation.</p>
                                     <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
                                         <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -194,7 +215,7 @@ Beautifully illustrated with space photography and artistic interpretations, and
                                 </div>
                                 <div class="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">An exquisite cosmic coincidence</h4>
-                                    <p class="mt-2 text-spaceTeal-2">Unveiling the remarkable alignments in our universe.</p>
+                                    <p class="mt-2 text-spaceTeal-2">Why total solar eclipses don’t happen anywhere other than Earth.</p>
                                     <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
                                         <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -215,7 +236,7 @@ Beautifully illustrated with space photography and artistic interpretations, and
                                 </div>
                                 <div class="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">Are aliens real?</h4>
-                                    <p class="mt-2 text-spaceTeal-2">A scientific examination of the possibility of extraterrestrial life.</p>
+                                    <p class="mt-2 text-spaceTeal-2">What scientists know about the possibility of alien life, from microbes to UFOs.</p>
                                     <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
                                         <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -230,39 +251,36 @@ Beautifully illustrated with space photography and artistic interpretations, and
 
                 <!-- Public Speaking and Media -->
                 <div class="bg-spaceTeal-4 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Public Speaking and Media</h3>
-                    <div class="space-y-6">
-                        <div class="bg-spaceTeal-3 p-6 rounded-lg">
-                            <div class="flex items-center space-x-6">
-                                <div class="flex-shrink-0 w-32 h-auto bg-spaceWhite-1 rounded-lg p-4">
-                                    <img src="{{ asset('images/media/nyt-logo.png') }}" alt="New York Times Logo" class="w-full h-full object-contain">
-                                </div>
-                                <div>
-                                    <h4 class="text-xl font-bold text-spaceWhite-1">New York Times</h4>
-                                    <p class="mt-2 text-spaceWhite-2">Expert commentary on space exploration and science communication.</p>
-                                </div>
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-6">Public Speaking and Media</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-4 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/nyt-logo.png') }}" alt="New York Times Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-6 rounded-lg">
-                            <div class="flex items-center space-x-6">
-                                <div class="flex-shrink-0 w-32 h-auto bg-spaceWhite-1 rounded-lg p-4">
-                                    <img src="{{ asset('images/media/rom-logo.png') }}" alt="Royal Ontario Museum Logo" class="w-full h-full object-contain">
-                                </div>
-                                <div>
-                                    <h4 class="text-xl font-bold text-spaceWhite-1">Royal Ontario Museum</h4>
-                                    <p class="mt-2 text-spaceWhite-2">Educational presentations on space science and astronomy.</p>
-                                </div>
+                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-4 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/rom-logo.png') }}" alt="Royal Ontario Museum Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-6 rounded-lg">
-                            <div class="flex items-center space-x-6">
-                                <div class="flex-shrink-0 w-32 h-auto bg-spaceWhite-1 rounded-lg p-4">
-                                    <img src="{{ asset('images/media/cbc-logo.png') }}" alt="CBC Logo" class="w-full h-full object-contain">
-                                </div>
-                                <div>
-                                    <h4 class="text-xl font-bold text-spaceWhite-1">CBC</h4>
-                                    <p class="mt-2 text-spaceWhite-2">Regular appearances discussing space news and discoveries.</p>
-                                </div>
+                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-4 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/cbc-logo.png') }}" alt="CBC Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-4 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/ctv-news-logo.png') }}" alt="CTV News Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-4 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/medium-logo.png') }}" alt="Medium Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-4 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/cmn-logo.png') }}" alt="CMN Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                     </div>
@@ -270,19 +288,20 @@ Beautifully illustrated with space photography and artistic interpretations, and
 
                 <!-- Communications and Non-Profit Consulting -->
                 <div class="bg-spaceBrown-2 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceWhite-1 mb-6">Communications and Non-Profit Consulting</h3>
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-6">Communications and Non-Profit Consulting</h3>
                     <div class="space-y-6">
                         <div class="bg-spaceBrown-1 p-6 rounded-lg">
                             <h4 class="text-xl font-bold text-spaceWhite-1">Government of Canada</h4>
-                            <p class="mt-2 text-spaceWhite-2">Strategic communications consulting for space-related initiatives.</p>
+                            <p class="mt-2 text-spaceWhite-2">SMember of the Space Advisory Board (2017-2020), providing strategic guidance for Canada’s space program.</p>
                         </div>
                         <div class="bg-spaceBrown-1 p-6 rounded-lg">
                             <h4 class="text-xl font-bold text-spaceWhite-1">SEDS Canada</h4>
-                            <p class="mt-2 text-spaceWhite-2">Supporting student engagement in space exploration and development.</p>
+                            <p class="mt-2 text-spaceWhite-2">Member of the board of advisors (current), supporting student engagement in space exploration and development
+                            .</p>
                         </div>
                         <div class="bg-spaceBrown-1 p-6 rounded-lg">
                             <h4 class="text-xl font-bold text-spaceWhite-1">Royal City Science</h4>
-                            <p class="mt-2 text-spaceWhite-2">Advancing science education and community engagement.</p>
+                            <p class="mt-2 text-spaceWhite-2">Member of the board of directors (2020-2024), advising on non-profit strategy for community science education.</p>
                         </div>
                     </div>
                 </div>
@@ -291,13 +310,13 @@ Beautifully illustrated with space photography and artistic interpretations, and
     </div>
 
     <!-- Call to Action -->
-    <div class="py-16 z-20 px-4 sm:px-8">
-        <div class="max-w-7xl mx-auto">
+    <div class="py-8 my-8 z-20 px-4 sm:px-8">
+        <div class="max-w-3xl mx-auto">
             <div class="bg-spaceTeal-4 rounded-lg shadow-2xl overflow-hidden">
                 <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
                     <div>
-                        <h2 class="text-3xl font-extrabold text-spaceWhite-1 sm:text-4xl">
-                            <span class="block">Let's connect and talk space.</span>
+                        <h2 class="text-3xl font-extrabold text-spaceWhite-1">
+                            <span class="block">Let's connect.</span>
                             <span class="block text-spaceTeal-2 text-lg">I am available for writing, editing, speaking engagements, strategy consulting, and many other forms of freelance work. </span>
                         </h2>
                     </div>
