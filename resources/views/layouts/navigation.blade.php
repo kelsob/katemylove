@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-spaceBrown-2 border-b border-spaceOrange-2 z-50 py-6 relative" style="background-image: url('{{ asset('images/space/saturn_rings_colored.png') }}'); background-size: cover; background-position: bottom;">
+<nav x-data="{ open: false }" class="bg-spaceBrown-2 border-b border-spaceOrange-2 z-50 py-8 relative" style="background-image: url('{{ asset('images/space/saturn_rings_colored.png') }}'); background-size: cover; background-position: bottom;">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -11,19 +11,19 @@
             </div>
             <!-- Navigation Links -->
             <div class="hidden space-x-4 sm:flex items-center">
-                <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
                     {{ __('Home') }}
                 </x-nav-link>
-                <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                <x-nav-link :href="route('about')" :active="request()->routeIs('about')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
                     {{ __('About') }}
                 </x-nav-link>
-                <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
                     {{ __('Previous Work') }}
                 </x-nav-link>
-                <x-nav-link :href="route('services')" :active="request()->routeIs('services')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                <x-nav-link :href="route('services')" :active="request()->routeIs('services')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
                     {{ __('Services') }}
                 </x-nav-link>
-                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-5 py-2 inline-block whitespace-nowrap !text-xl">
+                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
                     {{ __('Contact') }}
                 </x-nav-link>
             </div>

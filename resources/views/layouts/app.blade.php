@@ -90,65 +90,58 @@
 
             <!-- Footer -->
             <footer class="border-t border-spaceOrange-2 relative z-30 bg-spaceBrown-2/80 backdrop-blur-sm">
-                <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
                         <!-- Brand -->
-                        <div class="col-span-1 md:col-span-2">
+                        <div class="md:col-span-4">
                             <div class="logo flex flex-col leading-none -space-y-3">
                                 <span class="text-spaceTeal-2 text-3xl">Kate</span>
                                 <span class="text-spaceTeal-3 text-3xl">Howells</span>
                             </div>
-                            
                         </div>
 
                         <!-- Quick Links -->
-                        <div>
-                            <h3 class="text-sm font-semibold text-spaceTeal-1 tracking-wider uppercase">Quick Links</h3>
-                            <ul class="mt-4 space-y-4">
-                                <li>
-                                    <a href="{{ route('about') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1">
-                                        About
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('portfolio') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1">
-                                        Previous Work
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('services') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1">
-                                        Services
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('contact') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="md:col-span-4">
+                            <h3 class="text-lg font-semibold text-spaceTeal-1 mb-6">Quick Links</h3>
+                            <nav class="flex flex-col space-y-3">
+                                <a href="{{ route('about') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                    About
+                                </a>
+                                <a href="{{ route('portfolio') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                    Previous Work
+                                </a>
+                                <a href="{{ route('services') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                    Services
+                                </a>
+                                <a href="{{ route('contact') }}" class="text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                    Contact
+                                </a>
+                            </nav>
                         </div>
 
                         <!-- Contact -->
-                        <div>
-                            <h3 class="text-sm font-semibold text-spaceTeal-1 tracking-wider uppercase">Contact</h3>
-                            <ul class="mt-4 space-y-4">
-                                <li class="flex items-center text-spaceWhite-1">
-                                    <svg class="h-6 w-6 text-spaceTeal-2 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="md:col-span-4">
+                            <h3 class="text-lg font-semibold text-spaceTeal-1 mb-6">Contact</h3>
+                            <div class="flex flex-col space-y-3">
+                                <a href="mailto:kate.c.howells@gmail.com" class="flex items-center text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                    <svg class="h-5 w-5 text-spaceTeal-2 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                     kate.c.howells@gmail.com
-                                </li>
-                                <li class="flex items-center text-spaceWhite-1">
-                                    <svg class="h-6 w-6 text-spaceTeal-2 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                </a>
+                                <div class="flex items-center text-spaceWhite-1">
+                                    <svg class="h-5 w-5 text-spaceTeal-2 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
                                     Guelph, ON
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-8 pt-8 border-t border-spaceOrange-2">
+
+                    <!-- Copyright -->
+                    <div class="mt-16 pt-8 border-t border-spaceOrange-2">
                         <p class="text-spaceWhite-2 text-sm text-center">
                             &copy; {{ date('Y') }} Kate Howells. All rights reserved.
                         </p>
