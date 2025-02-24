@@ -1,13 +1,17 @@
 <x-app-layout>
     <!-- Background Image -->
     <!-- Hero Section -->
-    <div class="relative mt-24 mb-16 mx-4 px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
+    <div id="home" class="min-h-screen pt-24 flex items-center justify-center mx-4 px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div class="lg:col-span-7">
                 <div class="p-8 rounded-xl bg-spaceOrange-2 backdrop-blur-sm shadow-lg shadow-black/50">
                     <div class="mt-6 prose prose-lg text-spaceTeal-1">
                         <p>
-                        I'm a science communication expert who can help you connect with your audiences and reach your goals. Whether you need a writer, editor, speaker, or communications strategist, I'm here to help. 
+                        I am a writer, editor, speaker, and communications strategist with over a decade of experience in outreach and public education in the space sector. 
+
+My work is all about inspiring curiosity, cultivating appreciation for science and technology, and empowering people through knowledge. 
+
+As a freelancer, I'm here to help you connect with your audiences and reach your goals. I live and work in Guelph, Ontario, Canada, but I am open to hearing from clients worldwide. 
 
                         </p>
                     </div>
@@ -29,75 +33,55 @@
         </div>
     </div>
 
-    <!-- Services Section -->
-    <div class="mx-4 sm:mx-8 p-8 my-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-start flex items-center gap-8">
-                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders">
-                    Services
-                </h2>
-                <p class="text-xl text-spaceWhite-2">
-                I'm available as a freelancer to help with all kinds of projects, including:
-                </p>
-            </div>
-
-            <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="pt-6">
-                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
-                        <div class="-mt-6">
-                            <div>
-                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
-                                    <svg class="h-6 w-6 text-spaceTeal-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Public Speaking</h3>
-                            <p class="mt-5 text-base text-spaceWhite-1">
-                            Engaging talks tailored to your audience.
-                            </p>
+    <!-- About Section -->
+    <section id="about" class="flex items-center">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-spaceTeal-5 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-spaceWhite-1">
+                    <h2 class="text-4xl font-bold mb-4 text-spaceOrange-1 font-space-crusaders">About Kate Howells</h2>
+                    
+                    <section class="mb-12 flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                            <img src="{{ asset('images/kate/kate-bill-trudeau.jpg') }}" alt="Kate's Background" class="w-full h-auto rounded-lg shadow-md">
                         </div>
-                    </div>
-                </div>
-
-                <div class="pt-6">
-                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
-                        <div class="-mt-6">
-                            <div>
-                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
-                                    <svg class="h-6 w-6 text-spaceTeal-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                                    </svg>
-                                </span>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4 text-spaceTeal-2 font-space-crusaders">Background</h3>
+                            <div class="bg-spaceTeal-4 p-6 rounded-lg shadow-md">
+                                <p class="text-lg mb-4">Kate Howells is a passionate science communicator with a deep love for space exploration. With a background in astrophysics and a talent for engaging audiences, Kate has dedicated her career to making complex scientific concepts accessible and exciting for people of all ages.</p>
+                                <p class="text-lg">Born and raised in Guelph, Ontario, Kate's fascination with the cosmos began at a young age. She pursued her dreams by earning a degree in astrophysics from the University of Toronto, where she honed her skills in research and data analysis.</p>
                             </div>
-                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Writing</h3>
-                            <p class="mt-5 text-base text-spaceWhite-1">
-                            Compelling storytelling to make complex science topics accessible.
-                            </p>
                         </div>
-                    </div>
-                </div>
+                    </section>
 
-                <div class="pt-6">
-                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
-                        <div class="-mt-6">
-                            <div>
-                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
-                                    <svg class="h-6 w-6 text-spaceTeal-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Consulting</h3>
-                            <p class="mt-5 text-base text-spaceWhite-1">
-                            Expert guidance on non-profit and communications strategy
-                            </p>
+                    <section class="mb-12 flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:order-last md:pl-8 mb-6 md:mb-0">
+                            <img src="{{ asset('images/kate/kate-speaking.jpg') }}" alt="Kate's Experience" class="w-full h-auto rounded-lg shadow-md">
                         </div>
-                    </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4 text-spaceTeal-2 font-space-crusaders">Experience</h3>
+                            <div class="bg-spaceTeal-4 p-6 rounded-lg shadow-md">
+                                <p class="text-lg mb-4">Throughout her career, Kate has worked with various organizations, including the Canadian Space Agency and the Ontario Science Centre, to develop and deliver captivating educational programs. Her unique ability to translate complex scientific concepts into engaging stories has made her a sought-after speaker and consultant.</p>
+                                <p class="text-lg">In addition to her work in science communication, Kate is an active member of the astronomical community. She has contributed to several research projects and has published articles in popular science magazines, sharing her insights and enthusiasm with a wide audience.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                            <img src="{{ asset('images/kate/kate-headshot-2020.jpg') }}" alt="Kate's Mission" class="w-full h-auto rounded-lg shadow-md">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4 text-spaceTeal-2 font-space-crusaders">Mission</h3>
+                            <div class="bg-spaceTeal-4 p-6 rounded-lg shadow-md">
+                                <p class="text-lg mb-4">Kate's mission is to inspire curiosity and wonder about the universe, encouraging people to explore the mysteries of space and appreciate the beauty of science. Through her engaging presentations, workshops, and writing, she aims to spark a lifelong love for learning and discovery in her audiences.</p>
+                                <p class="text-lg">With a warm and approachable style, Kate creates an inclusive environment where everyone feels welcome to ask questions and share their own experiences. Her passion for space science is contagious, and she is committed to empowering the next generation of scientists and explorers.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <div class="py-8 my-8 z-20 px-4 sm:px-8">
         <div class="max-w-3xl mx-auto">
             <div class="bg-spaceTeal-4 rounded-lg shadow-2xl overflow-hidden">
@@ -105,7 +89,7 @@
                     <div>
                         <h2 class="text-3xl font-extrabold text-spaceWhite-1 sm:text-3xl">
                             <span class="block">Get in touch.</span>
-                            <span class="block text-spaceTeal-2 text-lg">I'm always interested in opportunities to bring my skills to new projects. 
+                            <span class="block text-spaceTeal-2 font-eurostyle">I'm always interested in opportunities to bring my skills to new projects. 
                             </span>
                         </h2>
                     </div>
@@ -121,15 +105,169 @@
             </div>
         </div>
     </div>
-    <!-- Featured Work Section -->
-    <div class="mx-4 sm:mx-8 p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    <!-- Services Section -->
+    <section id="services" class="flex items-center mb-16 mx-4 sm:mx-8 p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-start flex items-center gap-8">
                 <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders">
-                    My Work
+                    Services
                 </h2>
                 <p class="text-xl text-spaceWhite-2">
-                A few examples of my recent and most relevant work 
+                I'm available as a freelancer to help with all kinds of projects, including:
+                </p>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-spaceOrange-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Public Speaking</h3>
+                            <div class="mt-5 text-base text-spaceWhite-1 space-y-2">
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Crafting engaging presentations tailored to your audience</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Available for conferences, events, festivals, and more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-spaceOrange-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Writing</h3>
+                            <div class="mt-5 text-base text-spaceWhite-1 space-y-2">
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Making complex science topics accessible through clear, relatable language</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Focusing on storytelling and connecting scientific information to familiar concepts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-spaceOrange-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Consulting</h3>
+                            <div class="mt-5 text-base text-spaceWhite-1 space-y-2">
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Strategic goal setting and non-profit management</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Communications plans</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-spaceTeal-2 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-spaceOrange-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-2xl font-medium text-spaceTeal-1 tracking-tight">Editing</h3>
+                            <div class="mt-5 text-base text-spaceWhite-1 space-y-2">
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Improving clarity, cohesion, voice, and tone</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>Proofreading and copyediting</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
+                                    <span>SEO optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="portfolio" class="min-h-screen flex items-center mx-4 sm:mx-8 p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <div class="text-start">
+                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders mb-8">
+                    My Work
+                </h2>
+                <p class="text-lg text-spaceWhite-2">
+Since 2013, I have worked in communications roles with The Planetary Society, the world's largest space interest organization founded by Carl Sagan and led today by Bill Nye. I currently serve as Public Education Specialist, writing educational articles and a weekly newsletter for a mailing list of over 100,000 people around the world, and as Editor-in-Chief of The Planetary Report, our quarterly magazine.
+
+I have written two books on space science for public audiences, spoken at conferences and public events, and given dozens of interviews for television, radio, podcasts, and print. 
+
+I have also served on several boards and advisory councils in the space community, and in 2017, I was one of ten experts appointed to the Government of Canada's Space Advisory Board. 
+
+Below are a few examples of my recent and most relevant work.
                 </p>
             </div>
 
@@ -314,35 +452,38 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Call to Action -->
-    <div class="py-8 my-8 z-20 px-4 sm:px-8">
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-spaceTeal-4 rounded-lg shadow-2xl overflow-hidden">
-                <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
-                    <div>
-                        <h2 class="text-3xl font-extrabold text-spaceWhite-1">
-                            <span class="block">Let's connect.</span>
-                            <span class="block text-spaceTeal-2 text-lg">I am available for writing, editing, speaking engagements, strategy consulting, and many other forms of freelance work. </span>
-                        </h2>
-                    </div>
-                    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                        <div class="inline-flex rounded-md shadow">
-                            <a href="{{ route('contact') }}" 
-                            class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-spaceWhite-1 bg-spaceOrange-2 hover:bg-spaceOrange-1 transition-all duration-300">
-                                Get in Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex items-center relative overflow-hidden">
+        <!-- Fixed star field background -->
+        <div class="absolute inset-0">
+            <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-spaceOrange-1 sm:text-5xl md:text-6xl font-space-crusaders text-center">
+                Contact Me
+            </h2>
+            <div class="mt-6 prose prose-lg text-spaceWhite-1">
+                <p class="text-xl">
+                    I would love to hear from you! Please reach out with any questions or inquiries.
+                </p>
+                <form class="mt-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
+                    <input type="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
+                    <textarea placeholder="Your Message" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1"></textarea>
+                    <button type="submit" class="bg-spaceOrange-1 text-spaceWhite-1 p-2 rounded hover:bg-spaceOrange-2 transition-colors duration-300">Send Message</button>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Add required styles -->
     @push('styles')
     <style>
+        html {
+            scroll-padding-top: 8rem; /* Keep some padding for the fixed navbar */
+        }
         .text-gradient {
             background: linear-gradient(to right, 
                 var(--space-teal-1) 0%,
