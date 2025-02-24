@@ -16,7 +16,7 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
                         </p>
                     </div>
                     <div class="mt-8 flex justify-end">
-                        <a href="{{ route('about') }}" class="inline-block bg-spaceTeal-3 hover:text-spaceWhite-1 hover:bg-spaceTeal-4 border border-transparent rounded-md py-3 px-8 font-medium text-spaceTeal-1 transition-colors duration-300">
+                        <a href="#portfolio" class="inline-block bg-spaceTeal-3 text-spaceWhite-1 hover:bg-spaceTeal-4 border border-transparent rounded-md py-3 px-8 font-eurostyle font-bold text-lg transition-colors duration-300">
                             Learn More
                         </a>
                     </div>
@@ -95,8 +95,8 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
                     </div>
                     <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                         <div class="inline-flex rounded-md shadow">
-                            <a href="{{ route('contact') }}" 
-                            class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-spaceWhite-1 bg-spaceOrange-2 hover:bg-spaceOrange-1 transition-all duration-300">
+                            <a href="#contact" 
+                            class="inline-flex items-center px-6 py-3 border border-transparent font-eurostyle font-bold text-lg rounded-md text-spaceWhite-1 bg-spaceOrange-2 hover:bg-spaceOrange-1 transition-all duration-300">
                                 Contact Me
                             </a>
                         </div>
@@ -105,8 +105,9 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
             </div>
         </div>
     </div>
+
     <!-- Services Section -->
-    <section id="services" class="flex items-center mb-16 mx-4 sm:mx-8 p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
+    <section id="services" class="flex flex-col items-center mb-16 mx-4 sm:mx-8 p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-start flex items-center gap-8">
                 <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders">
@@ -251,6 +252,12 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
                 </div>
             </div>
         </div>
+        <div class="text-center mt-12">
+            <p class="text-xl text-spaceWhite-2 mb-6">Ready to discuss your project? Let's connect!</p>
+            <a href="#contact" class="inline-block bg-spaceOrange-2 hover:bg-spaceOrange-1 text-spaceWhite-1 font-eurostyle font-bold text-lg py-4 px-8 rounded-lg transition-colors duration-300">
+                Get in Touch
+            </a>
+        </div>
     </section>
 
     <!-- Featured Work Section -->
@@ -287,8 +294,8 @@ Below are a few examples of my recent and most relevant work.
                                     <div class="mt-4 flex items-center gap-4">
                                         <a href="https://www.amazon.ca/Moons-Mysteries-Marvels-Solar-System/dp/0645817996" 
                                            target="_blank"
-                                           class="inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg hover:bg-spaceTeal-2 transition-colors duration-300">
-                                            Pre-Order
+                                           class="inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300">
+                                            <span class="whitespace-nowrap">Pre-Order</span>
                                         </a>
                                         <span class="text-spaceTeal-1 font-bold">Releasing September 2025</span>
                                     </div>
@@ -305,7 +312,7 @@ Below are a few examples of my recent and most relevant work.
                                     <p class="mt-2 text-spaceWhite-1 text-sm">From astrophysics to rocket science to the future of space exploration, Space Is Cool as F*ck explains everything you thought you'd never understand about the universe in plain-old filthy English.</p>
                                     <a href="https://www.amazon.ca/Space-Cool-as-F-ck/dp/1524862975" 
                                        target="_blank"
-                                       class="mt-4 inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg hover:bg-spaceTeal-2 transition-colors duration-300">
+                                       class="mt-4 inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300">
                                         Buy
                                     </a>
                                 </div>
@@ -455,7 +462,7 @@ Below are a few examples of my recent and most relevant work.
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="min-h-screen flex items-center relative overflow-hidden">
+    <section id="contact" class="py-16 flex items-center relative overflow-hidden">
         <!-- Fixed star field background -->
         <div class="absolute inset-0">
             <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
@@ -472,7 +479,7 @@ Below are a few examples of my recent and most relevant work.
                     <input type="text" placeholder="Your Name" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
                     <input type="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
                     <textarea placeholder="Your Message" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1"></textarea>
-                    <button type="submit" class="bg-spaceOrange-1 text-spaceWhite-1 p-2 rounded hover:bg-spaceOrange-2 transition-colors duration-300">Send Message</button>
+                    <button type="submit" class="bg-spaceOrange-1 text-spaceWhite-1 font-eurostyle font-bold text-lg py-2 px-6 rounded hover:bg-spaceOrange-2 transition-colors duration-300">Send Message</button>
                 </form>
             </div>
         </div>

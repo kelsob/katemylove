@@ -18,7 +18,7 @@
                     {{ __('About') }}
                 </x-nav-link>
                 <x-nav-link href="#portfolio" :active="request()->routeIs('portfolio')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
-                    {{ __('Previous Work') }}
+                    <span class="whitespace-nowrap">{{ __('Previous Work') }}</span>
                 </x-nav-link>
                 <x-nav-link href="#services" :active="request()->routeIs('services')" class="bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1 rounded-lg px-4 text-xl pb-1">
                     {{ __('Services') }}
