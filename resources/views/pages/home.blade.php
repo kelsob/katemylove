@@ -1,7 +1,7 @@
 <x-app-layout>
     <!-- Background Image -->
     <!-- Hero Section -->
-    <div id="home" class="min-h-screen pt-32 flex items-center justify-center mx-4 px-4 sm:px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
+    <div id="home" class="min-h-screen pt-40 flex items-center justify-center mx-4 px-4 sm:px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div class="lg:col-span-7">
                 <div class="p-4 sm:p-8 rounded-xl bg-spaceOrange-2 backdrop-blur-sm shadow-lg shadow-black/50">
