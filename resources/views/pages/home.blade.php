@@ -1,29 +1,29 @@
 <x-app-layout>
     <!-- Background Image -->
     <!-- Hero Section -->
-    <div id="home" class="min-h-screen pt-24 flex items-center justify-center mx-4 px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
+    <div id="home" class="min-h-screen pt-32 flex items-center justify-center mx-4 px-4 sm:px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div class="lg:col-span-7">
-                <div class="p-8 rounded-xl bg-spaceOrange-2 backdrop-blur-sm shadow-lg shadow-black/50">
-                    <div class="mt-6 prose prose-lg text-spaceTeal-1">
-                        <p>
-                        I am a writer, editor, speaker, and communications strategist with over a decade of experience in outreach and public education in the space sector. 
+                <div class="p-4 sm:p-8 rounded-xl bg-spaceOrange-2 backdrop-blur-sm shadow-lg shadow-black/50">
+                    <div class="mt-4 sm:mt-6 prose prose-lg text-spaceTeal-1">
+                        <p class="text-base sm:text-lg">
+                        I am a writer, editor, speaker, and communications strategist with over a decade of experience in outreach and public education in the space sector.<br><br> 
 
-My work is all about inspiring curiosity, cultivating appreciation for science and technology, and empowering people through knowledge. 
+My work is all about inspiring curiosity, cultivating appreciation for science and technology, and empowering people through knowledge. <br><br>
 
 As a freelancer, I'm here to help you connect with your audiences and reach your goals. I live and work in Guelph, Ontario, Canada, but I am open to hearing from clients worldwide. 
 
                         </p>
                     </div>
-                    <div class="mt-8 flex justify-end">
-                        <a href="#portfolio" class="inline-block bg-spaceTeal-3 text-spaceWhite-1 hover:bg-spaceTeal-4 border border-transparent rounded-md py-3 px-8 font-eurostyle font-bold text-lg transition-colors duration-300">
+                    <div class="mt-6 sm:mt-8 flex justify-end">
+                        <a href="#portfolio" class="inline-block bg-spaceTeal-3 text-spaceWhite-1 hover:bg-spaceTeal-4 border border-transparent rounded-md py-2 px-6 sm:py-3 sm:px-8 font-eurostyle font-bold text-base sm:text-lg transition-colors duration-300">
                             Learn More
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-12 lg:mt-0 lg:col-span-5">
+            <div class="mt-8 lg:mt-0 lg:col-span-5">
                 <div class="relative max-w-md mx-auto">
                     <div class="rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-500 shadow-xl flex items-center justify-center">
                         <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-auto rounded-lg shadow-lg">
@@ -33,92 +33,20 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
         </div>
     </div>
 
-    <!-- About Section -->
-    <section id="about" class="flex items-center">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-spaceTeal-5 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-spaceWhite-1">
-                    <h2 class="text-4xl font-bold mb-4 text-spaceOrange-1 font-space-crusaders">About Kate Howells</h2>
-                    
-                    <section class="mb-12 flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                            <img src="{{ asset('images/kate/kate-bill-trudeau.jpg') }}" alt="Kate's Background" class="w-full h-auto rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-1/2">
-                            <h3 class="text-2xl font-bold mb-4 text-spaceTeal-2 font-space-crusaders">Background</h3>
-                            <div class="bg-spaceTeal-4 p-6 rounded-lg shadow-md">
-                                <p class="text-lg mb-4">Kate Howells is a passionate science communicator with a deep love for space exploration. With a background in astrophysics and a talent for engaging audiences, Kate has dedicated her career to making complex scientific concepts accessible and exciting for people of all ages.</p>
-                                <p class="text-lg">Born and raised in Guelph, Ontario, Kate's fascination with the cosmos began at a young age. She pursued her dreams by earning a degree in astrophysics from the University of Toronto, where she honed her skills in research and data analysis.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="mb-12 flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:order-last md:pl-8 mb-6 md:mb-0">
-                            <img src="{{ asset('images/kate/kate-speaking.jpg') }}" alt="Kate's Experience" class="w-full h-auto rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-1/2">
-                            <h3 class="text-2xl font-bold mb-4 text-spaceTeal-2 font-space-crusaders">Experience</h3>
-                            <div class="bg-spaceTeal-4 p-6 rounded-lg shadow-md">
-                                <p class="text-lg mb-4">Throughout her career, Kate has worked with various organizations, including the Canadian Space Agency and the Ontario Science Centre, to develop and deliver captivating educational programs. Her unique ability to translate complex scientific concepts into engaging stories has made her a sought-after speaker and consultant.</p>
-                                <p class="text-lg">In addition to her work in science communication, Kate is an active member of the astronomical community. She has contributed to several research projects and has published articles in popular science magazines, sharing her insights and enthusiasm with a wide audience.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                            <img src="{{ asset('images/kate/kate-headshot-2020.jpg') }}" alt="Kate's Mission" class="w-full h-auto rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-1/2">
-                            <h3 class="text-2xl font-bold mb-4 text-spaceTeal-2 font-space-crusaders">Mission</h3>
-                            <div class="bg-spaceTeal-4 p-6 rounded-lg shadow-md">
-                                <p class="text-lg mb-4">Kate's mission is to inspire curiosity and wonder about the universe, encouraging people to explore the mysteries of space and appreciate the beauty of science. Through her engaging presentations, workshops, and writing, she aims to spark a lifelong love for learning and discovery in her audiences.</p>
-                                <p class="text-lg">With a warm and approachable style, Kate creates an inclusive environment where everyone feels welcome to ask questions and share their own experiences. Her passion for space science is contagious, and she is committed to empowering the next generation of scientists and explorers.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="py-8 my-8 z-20 px-4 sm:px-8">
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-spaceTeal-4 rounded-lg shadow-2xl overflow-hidden">
-                <div class="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between">
-                    <div>
-                        <h2 class="text-3xl font-extrabold text-spaceWhite-1 sm:text-3xl">
-                            <span class="block">Get in touch.</span>
-                            <span class="block text-spaceTeal-2 font-eurostyle">I'm always interested in opportunities to bring my skills to new projects. 
-                            </span>
-                        </h2>
-                    </div>
-                    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                        <div class="inline-flex rounded-md shadow">
-                            <a href="#contact" 
-                            class="inline-flex items-center px-6 py-3 border border-transparent font-eurostyle font-bold text-lg rounded-md text-spaceWhite-1 bg-spaceOrange-2 hover:bg-spaceOrange-1 transition-all duration-300">
-                                Contact Me
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Services Section -->
-    <section id="services" class="flex flex-col items-center mb-16 mx-4 sm:mx-8 p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
+    <section id="services" class="flex flex-col items-center mb-16 mx-4 sm:mx-8 p-4 sm:p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-start flex items-center gap-8">
-                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders">
+            <div class="text-start flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
+                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-2xl sm:text-3xl font-space-crusaders">
                     Services
                 </h2>
-                <p class="text-xl text-spaceWhite-2">
+                <p class="text-lg sm:text-xl text-spaceWhite-2">
                 I'm available as a freelancer to help with all kinds of projects, including:
                 </p>
             </div>
 
-            <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 <div class="pt-6">
                     <div class="flow-root bg-spaceTeal-4 rounded-lg px-6 pb-8 h-full">
                         <div class="-mt-6">
@@ -261,16 +189,16 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
     </section>
 
     <!-- Featured Work Section -->
-    <section id="portfolio" class="min-h-screen flex items-center mx-4 sm:mx-8 p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
+    <section id="portfolio" class="min-h-screen flex items-center mx-4 sm:mx-8 p-4 sm:p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
         <div class="mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
             <div class="text-start">
                 <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders mb-8">
                     My Work
                 </h2>
                 <p class="text-lg text-spaceWhite-2">
-Since 2013, I have worked in communications roles with The Planetary Society, the world's largest space interest organization founded by Carl Sagan and led today by Bill Nye. I currently serve as Public Education Specialist, writing educational articles and a weekly newsletter for a mailing list of over 100,000 people around the world, and as Editor-in-Chief of The Planetary Report, our quarterly magazine.
+Since 2013, I have worked in communications roles with The Planetary Society, the world's largest space interest organization founded by Carl Sagan and led today by Bill Nye. I currently serve as Public Education Specialist, writing educational articles and a weekly newsletter for a mailing list of over 100,000 people around the world, and as Editor-in-Chief of The Planetary Report, our quarterly magazine.<br><br>
 
-I have written two books on space science for public audiences, spoken at conferences and public events, and given dozens of interviews for television, radio, podcasts, and print. 
+I have written two books on space science for public audiences, spoken at conferences and public events, and given dozens of interviews for television, radio, podcasts, and print. <br><br>
 
 I have also served on several boards and advisory councils in the space community, and in 2017, I was one of ten experts appointed to the Government of Canada's Space Advisory Board. 
 
@@ -280,21 +208,21 @@ Below are a few examples of my recent and most relevant work.
 
             <div class="mt-8 space-y-12">
                 <!-- Books -->
-                <div class="bg-spaceRed-2 rounded-lg p-8 shadow-xl">
+                <div class="bg-spaceRed-2 rounded-lg p-4 sm:p-8 shadow-xl">
                     <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Books</h3>
                     <div class="space-y-8">
-                        <div class="bg-spaceRed-1 p-6 rounded-lg">
-                            <div class="flex items-center space-x-6">
-                                <div class="w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/moons.png') }}" alt="Moons Book Cover" class="w-full h-full object-contain rounded">
+                        <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                                <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
+                                    <img src="{{ asset('images/media/moons.png') }}" alt="Moons Book Cover" class="w-full h-auto object-contain rounded">
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
                                     <p class="mt-2 text-spaceWhite-1 text-sm">Join space evangelist Kate Howells on an interplanetary voyage to explore the mind-boggling moons of our solar system, from the volcanic hellscape of Io to the ice mountains and methane seas of Titan.</p>
-                                    <div class="mt-4 flex items-center gap-4">
+                                    <div class="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                                         <a href="https://www.amazon.ca/Moons-Mysteries-Marvels-Solar-System/dp/0645817996" 
                                            target="_blank"
-                                           class="inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300">
+                                           class="w-full sm:w-auto inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300 text-center">
                                             <span class="whitespace-nowrap">Pre-Order</span>
                                         </a>
                                         <span class="text-spaceTeal-1 font-bold">Releasing September 2025</span>
@@ -302,17 +230,17 @@ Below are a few examples of my recent and most relevant work.
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-spaceRed-1 p-6 rounded-lg">
-                            <div class="flex items-center space-x-6">
-                                <div class="w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/spaceiscoolasfuck.png') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-full object-contain rounded">
+                        <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                                <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
+                                    <img src="{{ asset('images/media/spaceiscoolasfuck.png') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-auto object-contain rounded">
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">Space is Cool as F**k</h4>
                                     <p class="mt-2 text-spaceWhite-1 text-sm">From astrophysics to rocket science to the future of space exploration, Space Is Cool as F*ck explains everything you thought you'd never understand about the universe in plain-old filthy English.</p>
                                     <a href="https://www.amazon.ca/Space-Cool-as-F-ck/dp/1524862975" 
                                        target="_blank"
-                                       class="mt-4 inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300">
+                                       class="mt-4 w-full sm:w-auto inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300 text-center">
                                         Buy
                                     </a>
                                 </div>
@@ -327,8 +255,8 @@ Below are a few examples of my recent and most relevant work.
                     <div class="space-y-6">
                         <a href="https://www.planetary.org/articles/how-space-explorers-could-grow-habitats-from-fungus" 
                            target="_blank" 
-                           class="block bg-spaceOrange-1 p-6 rounded-lg flex items-center gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
-                            <div class="w-32 h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
+                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
                                 <img src="{{ asset('images/media/fungus.png') }}" alt="Fungal Space Habitat Concept" class="w-full h-full object-cover rounded">
                             </div>
                             <div>
@@ -345,8 +273,8 @@ Below are a few examples of my recent and most relevant work.
 
                         <a href="https://www.planetary.org/articles/an-exquisite-cosmic-coincidence" 
                            target="_blank" 
-                           class="block bg-spaceOrange-1 p-6 rounded-lg flex items-center gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
-                            <div class="w-32 h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
+                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
                                 <img src="{{ asset('images/media/cosmiccoincidence.png') }}" alt="Solar Eclipse" class="w-full h-full object-cover rounded">
                             </div>
                             <div>
@@ -363,8 +291,8 @@ Below are a few examples of my recent and most relevant work.
 
                         <a href="https://www.planetary.org/articles/are-aliens-real" 
                            target="_blank" 
-                           class="block bg-spaceOrange-1 p-6 rounded-lg flex items-center gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
-                            <div class="w-32 h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
+                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
                                 <img src="{{ asset('images/media/arealiensreal.png') }}" alt="Tardigrade in Space" class="w-full h-full object-cover rounded">
                             </div>
                             <div>
@@ -382,35 +310,35 @@ Below are a few examples of my recent and most relevant work.
                 </div>
 
                 <!-- Public Speaking and Media -->
-                <div class="bg-spaceTeal-4 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-6">Public Speaking and Media</h3>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                <div class="bg-spaceTeal-4 rounded-lg p-4 sm:p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Public Speaking and Media</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
                                 <img src="{{ asset('images/media/nyt-logo.png') }}" alt="New York Times Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
                                 <img src="{{ asset('images/media/rom-logo.png') }}" alt="Royal Ontario Museum Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
                                 <img src="{{ asset('images/media/cbc-logo.png') }}" alt="CBC Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
                                 <img src="{{ asset('images/media/ctv-news-logo.png') }}" alt="CTV News Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
                                 <img src="{{ asset('images/media/medium-logo.png') }}" alt="Medium Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
-                        <div class="bg-spaceTeal-3 p-4 rounded-lg">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
                                 <img src="{{ asset('images/media/cmn-logo.png') }}" alt="CMN Logo" class="w-full h-auto object-contain">
                             </div>
@@ -419,38 +347,38 @@ Below are a few examples of my recent and most relevant work.
                 </div>
 
                 <!-- Communications and Non-Profit Consulting -->
-                <div class="bg-spaceBrown-2 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-6">Communications and Non-Profit Consulting</h3>
+                <div class="bg-spaceBrown-2 rounded-lg p-4 sm:p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Communications and Non-Profit Consulting</h3>
                     <div class="space-y-6">
-                        <div class="bg-spaceBrown-1 p-6 rounded-lg flex items-center gap-6">
-                            <div class="bg-spaceBrown-2 p-2 rounded-lg">
-                                <div class="w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
+                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
                                     <img src="{{ asset('images/media/govcanada-logo.png') }}" alt="Government of Canada Logo" class="w-full h-auto object-contain">
                                 </div>
                             </div>
-                            <div>
+                            <div class="flex-1">
                                 <h4 class="text-xl font-bold text-spaceWhite-1">Government of Canada</h4>
                                 <p class="mt-2 text-spaceWhite-2">Member of the Space Advisory Board (2017-2020), providing strategic guidance for Canada's space program.</p>
                             </div>
                         </div>
-                        <div class="bg-spaceBrown-1 p-6 rounded-lg flex items-center gap-6">
-                            <div class="bg-spaceBrown-2 p-2 rounded-lg">
-                                <div class="w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
+                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
                                     <img src="{{ asset('images/media/seds-canada-logo.png') }}" alt="SEDS Canada Logo" class="w-full h-auto object-contain">
                                 </div>
                             </div>
-                            <div>
+                            <div class="flex-1">
                                 <h4 class="text-xl font-bold text-spaceWhite-1">SEDS Canada</h4>
                                 <p class="mt-2 text-spaceWhite-2">Member of the board of advisors (current), supporting student engagement in space exploration and development.</p>
                             </div>
                         </div>
-                        <div class="bg-spaceBrown-1 p-6 rounded-lg flex items-center gap-6">
-                            <div class="bg-spaceBrown-2 p-2 rounded-lg">
-                                <div class="w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
+                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
                                     <img src="{{ asset('images/media/rcs-logo.png') }}" alt="Royal City Science Logo" class="w-full h-auto object-contain">
                                 </div>
                             </div>
-                            <div>
+                            <div class="flex-1">
                                 <h4 class="text-xl font-bold text-spaceWhite-1">Royal City Science</h4>
                                 <p class="mt-2 text-spaceWhite-2">Member of the board of directors (2020-2024), advising on non-profit strategy for community science education.</p>
                             </div>
@@ -462,24 +390,26 @@ Below are a few examples of my recent and most relevant work.
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 flex items-center relative overflow-hidden">
+    <section id="contact" class="py-8 sm:py-16 flex items-center relative overflow-hidden">
         <!-- Fixed star field background -->
         <div class="absolute inset-0">
             <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-spaceOrange-1 sm:text-5xl md:text-6xl font-space-crusaders text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-spaceOrange-1 font-space-crusaders text-center">
                 Contact Me
             </h2>
-            <div class="mt-6 prose prose-lg text-spaceWhite-1">
-                <p class="text-xl">
+            <div class="mt-4 sm:mt-6 prose prose-lg text-spaceWhite-1">
+                <p class="text-lg sm:text-xl">
                     I would love to hear from you! Please reach out with any questions or inquiries.
                 </p>
                 <form class="mt-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
-                    <input type="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
-                    <textarea placeholder="Your Message" class="w-full p-2 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1"></textarea>
-                    <button type="submit" class="bg-spaceOrange-1 text-spaceWhite-1 font-eurostyle font-bold text-lg py-2 px-6 rounded hover:bg-spaceOrange-2 transition-colors duration-300">Send Message</button>
+                    <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
+                    <textarea placeholder="Your Message" rows="4" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1"></textarea>
+                    <button type="submit" class="w-full sm:w-auto bg-spaceOrange-1 text-spaceWhite-1 font-eurostyle font-bold text-lg py-3 px-6 rounded hover:bg-spaceOrange-2 transition-colors duration-300">
+                        Send Message
+                    </button>
                 </form>
             </div>
         </div>
@@ -595,6 +525,51 @@ Below are a few examples of my recent and most relevant work.
             }
             75% {
                 transform: rotate(1deg) scale(1.02);
+            }
+        }
+
+        /* Add responsive typography */
+        @media (max-width: 640px) {
+            .prose {
+                font-size: 0.95rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+                line-height: 1.2;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+        }
+
+        /* Adjust animations for mobile performance */
+        @media (max-width: 768px) {
+            .floating-orb,
+            .floating-orb-2,
+            .floating-orb-3 {
+                animation-duration: 15s;
+            }
+            
+            .animate-nebula {
+                animation-duration: 15s;
+            }
+        }
+
+        /* Improve touch targets on mobile */
+        @media (max-width: 640px) {
+            button,
+            .button,
+            a {
+                min-height: 44px;
+                padding: 0.75rem 1rem;
+            }
+            
+            input,
+            textarea {
+                font-size: 16px; /* Prevent iOS zoom on focus */
             }
         }
 
