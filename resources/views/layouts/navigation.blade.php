@@ -30,8 +30,8 @@ style="background-image: url('{{ asset('images/space/saturn_rings_colored.png') 
             <!-- Logo -->
             <div class="shrink-0 flex items-center">
                 <a href="#home" class="logo flex flex-col leading-none -space-y-3">
-                    <span class="text-spaceTeal-2 text-5xl">Kate</span>
-                    <span class="text-spaceTeal-3 text-5xl">Howells</span>
+                    <span class="text-spaceTeal-2 text-5xl drop-shadow-md">Kate</span>
+                    <span class="text-spaceTeal-3 text-5xl drop-shadow-md">Howells</span>
                 </a>
             </div>
             <!-- Navigation Links -->
