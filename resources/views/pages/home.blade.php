@@ -1,7 +1,7 @@
 <x-app-layout>
     <!-- Background Image -->
     <!-- Hero Section -->
-    <div id="home" class="min-h-screen pt-40 flex items-center justify-center mx-4 px-4 sm:px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl">
+    <div id="home" class="min-h-screen pt-40 flex items-center justify-center mx-4 px-4 sm:px-16 sm:mx-8 xl:mx-auto w-auto max-w-7xl pb-8 lg:pb-0">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div class="lg:col-span-7">
                 <div class="p-4 sm:p-8 rounded-xl bg-spaceOrange-2 backdrop-blur-sm shadow-lg shadow-black/50">
@@ -27,9 +27,9 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
             </div>
 
             <div class="mt-8 lg:mt-0 lg:col-span-5">
-                <div class="relative max-w-md mx-auto">
-                    <div class="rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-500 shadow-xl flex items-center justify-center">
-                        <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-auto rounded-lg shadow-lg">
+                <div class="relative w-full" style="height: 400px">
+                    <div class="rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-500 shadow-xl h-full">
+                        <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-full object-cover object-center rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
