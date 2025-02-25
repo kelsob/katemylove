@@ -16,8 +16,11 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
                         </p>
                     </div>
                     <div class="mt-6 sm:mt-8 flex justify-end">
-                        <a href="#portfolio" class="inline-block bg-spaceTeal-3 text-spaceWhite-1 hover:bg-spaceTeal-4 border border-transparent rounded-md py-2 px-6 sm:py-3 sm:px-8 font-eurostyle font-bold text-base sm:text-lg transition-colors duration-300">
-                            Learn More
+                        <a href="#portfolio" class="inline-block bg-spaceTeal-3 text-spaceWhite-1 hover:bg-spaceTeal-4 border border-transparent rounded-md py-2 px-6 sm:py-3 sm:px-8 font-eurostyle font-bold text-base sm:text-lg transition-colors duration-300 flex items-center ">
+                            Learn More <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2 ml-3" viewBox="0 0 24 24" fill="currentColor">
+                                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                                    </svg>
                         </a>
                     </div>
                 </div>
@@ -374,8 +377,8 @@ Below are a few examples of my recent and most relevant work.
                         </div>
                         <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                             <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
-                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/rcs-logo.png') }}" alt="Royal City Science Logo" class="w-full h-auto object-contain">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                                    <img src="{{ asset('images/media/rcs-logo.png') }}" alt="Royal City Science Logo" class="w-full h-full object-contain">
                                 </div>
                             </div>
                             <div class="flex-1">
