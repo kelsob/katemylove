@@ -1,22 +1,32 @@
 #!/bin/bash
 
+# Clean up any existing build artifacts
+rm -rf public/build
+mkdir -p public/build
+
 # Install dependencies
 npm install
 
 # Build assets
 npm run build
 
-# Ensure build directory exists in public
-mkdir -p public/build
-
-# Copy manifest if it exists in a different location
+# Debug information
+echo "=== Debug Information ==="
+echo "Current directory:"
+pwd
+echo
+echo "Contents of public directory:"
+ls -la public/
+echo
+echo "Contents of public/build directory:"
+ls -la public/build/
+echo
+echo "Looking for manifest.json files:"
+find . -name "manifest.json"
+echo
+echo "Contents of manifest.json (if exists):"
 if [ -f "public/build/manifest.json" ]; then
-    echo "manifest.json already in the correct location"
+    cat public/build/manifest.json
 else
-    echo "Looking for manifest.json in other locations..."
-    find . -name "manifest.json" -exec cp {} public/build/manifest.json \;
-fi
-
-# List contents of public/build for debugging
-echo "Contents of public/build:"
-ls -la public/build/ 
+    echo "manifest.json not found in public/build/"
+fi 
