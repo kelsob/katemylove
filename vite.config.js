@@ -5,11 +5,12 @@ export default defineConfig({
     build: {
         outDir: 'public/build',
         manifest: true,
+        assetsDir: '',
         rollupOptions: {
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-            ],
+            ]
         }
     },
     plugins: [
@@ -22,7 +23,8 @@ export default defineConfig({
                 ...refreshPaths,
                 'app/Http/Livewire/**',
             ],
-            buildDirectory: 'build'
+            buildDirectory: 'build',
+            publicDirectory: 'public'
         }),
     ],
 });
