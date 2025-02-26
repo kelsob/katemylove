@@ -6,19 +6,10 @@ export default defineConfig({
         outDir: 'public/build',
         manifest: true,
         assetsDir: '',
-        rollupOptions: {
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ]
-        }
     },
     plugins: [
         laravel({
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ],
+            input: 'resources/js/app.js',
             refresh: [
                 ...refreshPaths,
                 'app/Http/Livewire/**',
