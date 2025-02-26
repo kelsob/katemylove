@@ -3,7 +3,14 @@ import laravel, { refreshPaths } from 'laravel-vite-plugin';
 
 export default defineConfig({
     build: {
-        outDir: 'public',
+        outDir: 'public/build',
+        manifest: true,
+        rollupOptions: {
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
+        }
     },
     plugins: [
         laravel({
@@ -15,6 +22,7 @@ export default defineConfig({
                 ...refreshPaths,
                 'app/Http/Livewire/**',
             ],
+            buildDirectory: 'build'
         }),
     ],
 });
