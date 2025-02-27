@@ -49,7 +49,7 @@ style="background-image: url('{{ asset('images/space/saturn_rings_colored.png') 
                 <x-nav-link href="#portfolio" 
                     class="rounded-lg px-4 text-xl pb-1 bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1"
                     x-bind:class="activeSection === 'portfolio' ? 'text-spaceWhite-1' : ''">
-                    <span class="whitespace-nowrap">{{ __('Previous Work') }}</span>
+                    <span class="whitespace-nowrap">{{ __('My Work') }}</span>
                 </x-nav-link>
                 <x-nav-link href="#contact" 
                     class="rounded-lg px-4 text-xl pb-1 bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1"

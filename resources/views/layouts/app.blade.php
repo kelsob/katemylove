@@ -115,7 +115,7 @@
                                     Services
                                 </a>
                                 <a href="#portfolio" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
-                                    Previous Work
+                                    My Work
                                 </a>
                                 <a href="#contact" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
                                     Contact
