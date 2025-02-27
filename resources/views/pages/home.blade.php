@@ -406,10 +406,11 @@ Below are a few examples of my recent and most relevant work.
                 <p class="text-lg sm:text-xl">
                     I would love to hear from you! Please reach out with any questions or inquiries.
                 </p>
-                <form class="mt-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
-                    <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1">
-                    <textarea placeholder="Your Message" rows="4" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1"></textarea>
+                <form action="{{ route('contact.submit') }}" method="POST" class="mt-4">
+                    @csrf
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1" required>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1" required></textarea>
                     <button type="submit" class="w-full sm:w-auto bg-spaceOrange-1 text-spaceWhite-1 font-eurostyle font-bold text-lg py-3 px-6 rounded hover:bg-spaceOrange-2 transition-colors duration-300">
                         Send Message
                     </button>

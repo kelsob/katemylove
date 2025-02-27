@@ -55,11 +55,6 @@
         </div>
 
         <div class="field">
-            <div class="label">Inquiry Type:</div>
-            <div class="value">{{ ucfirst($data['inquiry_type']) }}</div>
-        </div>
-
-        <div class="field">
             <div class="label">Message:</div>
             <div class="value">{{ $data['message'] }}</div>
         </div>

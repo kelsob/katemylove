@@ -15,17 +15,14 @@ class ContactController extends Controller
 
     public function submit(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'inquiry_type' => 'required|string|in:speaking,collaboration,media,other',
+        $validatedData = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
             'message' => 'required|string',
         ]);
 
-        // Send email notification
-        Mail::to('contact@kateonearth.com')->send(new ContactFormSubmission($validated));
+        Mail::to('kate.c.howells@gmail.com')->send(new ContactFormSubmission($validatedData));
 
-        // Redirect back with success message
-        return redirect()->back()->with('success', 'Thank you for your message! I will get back to you soon.');
+        return redirect()->back()->with('success', 'Your message has been sent!');
     }
 } 

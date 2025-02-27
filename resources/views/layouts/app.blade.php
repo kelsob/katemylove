@@ -8,8 +8,8 @@
         <title>Kate Howells</title>
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="{{ asset('images/saturn_logo.png') }}">
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('images/space/saturn_logo.png') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/space/favicon.ico') }}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
