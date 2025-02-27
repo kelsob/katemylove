@@ -15,21 +15,21 @@
                     <div class="absolute pointer-events-none transition-all duration-500 ease-in-out bg-gray-800 rounded-md" id="nav-indicator"></div>
 
                     @php
-                        $links = [
+                        $navItems = [
                             'home' => [route('home'), 'Home'],
+                            'about' => [route('about'), 'About'],
                             'services' => [route('services'), 'Services'],
                             'portfolio' => [route('portfolio'), 'Portfolio'],
-                            'about' => [route('about'), 'About'],
-                            'contact' => [route('contact'), 'Contact']
+                            'contact' => ['#contact', 'Contact']
                         ];
                         $currentRoute = request()->route()->getName();
                     @endphp
 
-                    @foreach($links as $key => $link)
-                        <a href="{{ $link[0] }}" 
+                    @foreach($navItems as $key => $item)
+                        <a href="{{ $item[0] }}" 
                            class="nav-link relative mx-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors duration-200 {{ $currentRoute === $key ? 'text-white' : 'text-gray-300 hover:text-white' }}"
                            data-active="{{ $currentRoute === $key ? 'true' : 'false' }}">
-                            {{ $link[1] }}
+                            {{ $item[1] }}
                         </a>
                     @endforeach
                 </div>
@@ -53,10 +53,10 @@
     <!-- Mobile menu -->
     <div class="sm:hidden" x-show="mobileMenuOpen" x-cloak>
         <div class="px-2 pt-2 pb-3 space-y-1">
-            @foreach($links as $key => $link)
-                <a href="{{ $link[0] }}" 
+            @foreach($navItems as $key => $item)
+                <a href="{{ $item[0] }}" 
                    class="block px-3 py-2 rounded-md text-base font-medium {{ $currentRoute === $key ? 'text-white bg-gray-800' : 'text-gray-300 hover:text-white hover:bg-gray-700' }}">
-                    {{ $link[1] }}
+                    {{ $item[1] }}
                 </a>
             @endforeach
         </div>

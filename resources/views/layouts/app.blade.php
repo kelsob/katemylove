@@ -117,7 +117,7 @@
                                 <a href="{{ route('services') }}" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
                                     Services
                                 </a>
-                                <a href="{{ route('contact') }}" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                <a href="#contact" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
                                     Contact
                                 </a>
                             </nav>
