@@ -26,7 +26,7 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
                 </div>
             </div>
 
-            <div class="mt-8 lg:mt-0 lg:col-span-5">
+            <div class="mt-4 pt-4 lg:mt-0 lg:col-span-5">
                 <div class="relative w-full" style="height: 400px">
                     <div class="rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-500 shadow-xl h-full">
                         <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-full object-cover object-center rounded-lg shadow-lg">
