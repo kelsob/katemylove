@@ -108,13 +108,13 @@
                         <div class="col-span-1 sm:col-span-4">
                             <h3 class="text-base sm:text-lg font-semibold text-spaceTeal-1 mb-3 sm:mb-4">Quick Links</h3>
                             <nav class="flex flex-col space-y-2">
-                                <a href="{{ route('about') }}" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                <a href="#about" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
                                     About
                                 </a>
-                                <a href="{{ route('portfolio') }}" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                <a href="#portfolio" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
                                     Previous Work
                                 </a>
-                                <a href="{{ route('services') }}" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
+                                <a href="#services" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
                                     Services
                                 </a>
                                 <a href="#contact" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">

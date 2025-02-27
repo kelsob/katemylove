@@ -175,7 +175,7 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
                                         <ellipse cx="12" cy="12" rx="7" ry="7"/>
                                         <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
                                     </svg>
-                                    <span>SEO optimization</span>
+                                    <span>Search Engine Optimization (SEO)</span>
                                 </div>
                             </div>
                         </div>
