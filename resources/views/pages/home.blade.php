@@ -314,7 +314,8 @@ Below are a few examples of my recent and most relevant work.
 
                 <!-- Public Speaking and Media -->
                 <div class="bg-spaceTeal-4 rounded-lg p-4 sm:p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Public Speaking and Media</h3>
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-2 font-space-crusaders">Public Speaking and Media</h3>
+                    <p class="text-spaceTeal-2 mb-6 text-lg">I am a trusted source on space topics for media and public institutions, including:</p>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
