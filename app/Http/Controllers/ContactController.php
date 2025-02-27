@@ -23,6 +23,6 @@ class ContactController extends Controller
 
         Mail::to('kate.c.howells@gmail.com')->send(new ContactFormSubmission($validatedData));
 
-        return redirect()->back()->with('success', 'Your message has been sent!');
+        return redirect(route('home') . '#contact')->with('success', 'Your message has been sent!');
     }
 } 
