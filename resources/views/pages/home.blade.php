@@ -406,7 +406,7 @@ Below are a few examples of my recent and most relevant work.
                 <p class="text-lg sm:text-xl">
                     I would love to hear from you! Please reach out with any questions or inquiries.
                 </p>
-                <form action="{{ route('home') }}#contact" method="POST" class="mt-4">
+                <form action="{{ route('contact.submit') }}" method="POST" class="mt-4">
                     @csrf
                     <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1" required>
                     <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded bg-spaceTeal-4 text-spaceWhite-1" required>
