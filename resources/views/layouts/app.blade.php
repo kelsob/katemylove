@@ -11,6 +11,11 @@
         <link rel="icon" type="image/png" href="{{ asset('images/space/saturn_logo.png') }}">
         <link rel="icon" type="image/x-icon" href="{{ asset('images/space/favicon.ico') }}">
 
+        <!-- Preload custom fonts -->
+        <link rel="preload" href="/fonts/EuroStyle.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="/fonts/SpaceCrusaders.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="/fonts/TitillumWeb.ttf" as="font" type="font/ttf" crossorigin>
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
