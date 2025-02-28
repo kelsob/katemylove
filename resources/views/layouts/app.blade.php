@@ -78,7 +78,10 @@
     <body class="font-sans antialiased min-h-screen relative">
         <!-- Fixed Background -->
         <div class="fixed inset-0 -z-10">
-            <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="w-full h-full object-cover">
+            <picture>
+                <source media="(max-width: 480px)" srcset="{{ asset('images/space/star_field_mobile.webp') }}">
+                <img src="{{ asset('images/space/star_field.webp') }}" alt="Star Field" class="w-full h-full object-cover">
+            </picture>
         </div>
         
         <!-- Main Content -->

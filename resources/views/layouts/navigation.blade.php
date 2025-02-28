@@ -23,7 +23,7 @@
 @scroll.window="checkActiveSection()"
 x-init="checkActiveSection()"
 class="bg-spaceBrown-2 border-b border-spaceOrange-2 z-50 py-8 fixed w-full top-0" 
-style="background-image: url('{{ asset('images/space/saturn_rings_colored.png') }}'); background-size: cover; background-position: bottom;">
+style="background-image: url('{{ asset(request()->header('User-Agent') && preg_match('/\b(Android|iPhone|iPad|iPod)\b/i', request()->header('User-Agent')) ? 'images/space/saturn_rings_colored_mobile.webp' : 'images/space/saturn_rings_colored.webp') }}'); background-size: cover; background-position: bottom;">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
