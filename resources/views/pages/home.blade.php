@@ -217,7 +217,7 @@ Below are a few examples of my recent and most relevant work.
                         <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
                             <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
                                 <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/moons.png') }}" alt="Moons Book Cover" class="w-full h-auto object-contain rounded">
+                                    <img src="{{ asset('images/media/moons.webp') }}" alt="Moons Book Cover" class="w-full h-auto object-contain rounded">
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
@@ -236,7 +236,7 @@ Below are a few examples of my recent and most relevant work.
                         <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
                             <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
                                 <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/spaceiscoolasfuck.png') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-auto object-contain rounded">
+                                    <img src="{{ asset('images/media/spaceiscoolasfuck.webp') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-auto object-contain rounded">
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-bold text-spaceTeal-1">Space is Cool as F**k</h4>
@@ -260,7 +260,7 @@ Below are a few examples of my recent and most relevant work.
                            target="_blank" 
                            class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
                             <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
-                                <img src="{{ asset('images/media/fungus.png') }}" alt="Fungal Space Habitat Concept" class="w-full h-full object-cover rounded">
+                                <img src="{{ asset('images/media/fungus.webp') }}" alt="Fungal Space Habitat Concept" class="w-full h-full object-cover rounded">
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-spaceTeal-1">How space explorers could grow habitats from fungus</h4>
@@ -278,7 +278,7 @@ Below are a few examples of my recent and most relevant work.
                            target="_blank" 
                            class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
                             <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
-                                <img src="{{ asset('images/media/cosmiccoincidence.png') }}" alt="Solar Eclipse" class="w-full h-full object-cover rounded">
+                                <img src="{{ asset('images/media/cosmiccoincidence.webp') }}" alt="Solar Eclipse" class="w-full h-full object-cover rounded">
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-spaceTeal-1">An exquisite cosmic coincidence</h4>
@@ -296,7 +296,7 @@ Below are a few examples of my recent and most relevant work.
                            target="_blank" 
                            class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
                             <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
-                                <img src="{{ asset('images/media/arealiensreal.png') }}" alt="Tardigrade in Space" class="w-full h-full object-cover rounded">
+                                <img src="{{ asset('images/media/arealiensreal.webp') }}" alt="Tardigrade in Space" class="w-full h-full object-cover rounded">
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-spaceTeal-1">Are aliens real?</h4>
@@ -319,32 +319,32 @@ Below are a few examples of my recent and most relevant work.
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/nyt-logo.png') }}" alt="New York Times Logo" class="w-full h-auto object-contain">
+                                <img src="{{ asset('images/media/nyt-logo.webp') }}" alt="New York Times Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/rom-logo.png') }}" alt="Royal Ontario Museum Logo" class="w-full h-auto object-contain">
+                                <img src="{{ asset('images/media/rom-logo.webp') }}" alt="Royal Ontario Museum Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/cbc-logo.png') }}" alt="CBC Logo" class="w-full h-auto object-contain">
+                                <img src="{{ asset('images/media/cbc-logo.webp') }}" alt="CBC Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/ctv-news-logo.png') }}" alt="CTV News Logo" class="w-full h-auto object-contain">
+                                <img src="{{ asset('images/media/ctv-news-logo.webp') }}" alt="CTV News Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/medium-logo.png') }}" alt="Medium Logo" class="w-full h-auto object-contain">
+                                <img src="{{ asset('images/media/medium-logo.webp') }}" alt="Medium Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                         <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
                             <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/cmn-logo.png') }}" alt="CMN Logo" class="w-full h-auto object-contain">
+                                <img src="{{ asset('images/media/cmn-logo.webp') }}" alt="CMN Logo" class="w-full h-auto object-contain">
                             </div>
                         </div>
                     </div>
@@ -357,7 +357,7 @@ Below are a few examples of my recent and most relevant work.
                         <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                             <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
                                 <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/govcanada-logo.png') }}" alt="Government of Canada Logo" class="w-full h-auto object-contain">
+                                    <img src="{{ asset('images/media/govcanada-logo.webp') }}" alt="Government of Canada Logo" class="w-full h-auto object-contain">
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -368,7 +368,7 @@ Below are a few examples of my recent and most relevant work.
                         <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                             <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
                                 <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/seds-canada-logo.png') }}" alt="SEDS Canada Logo" class="w-full h-auto object-contain">
+                                    <img src="{{ asset('images/media/seds-canada-logo.webp') }}" alt="SEDS Canada Logo" class="w-full h-auto object-contain">
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -379,7 +379,7 @@ Below are a few examples of my recent and most relevant work.
                         <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                             <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
                                 <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center overflow-hidden">
-                                    <img src="{{ asset('images/media/rcs-logo.png') }}" alt="Royal City Science Logo" class="w-full h-full object-contain">
+                                    <img src="{{ asset('images/media/rcs-logo.webp') }}" alt="Royal City Science Logo" class="w-full h-full object-contain">
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -397,7 +397,7 @@ Below are a few examples of my recent and most relevant work.
     <section id="contact" class="py-8 sm:py-16 flex items-center relative overflow-hidden">
         <!-- Fixed star field background -->
         <div class="absolute inset-0">
-            <img src="{{ asset('images/space/star_field.jpg') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
+            <img src="{{ asset('images/space/star_field.webp') }}" alt="Star Field" class="fixed w-full h-full object-cover opacity-80">
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-spaceOrange-1 font-space-crusaders text-center">
