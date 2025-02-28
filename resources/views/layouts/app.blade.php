@@ -123,20 +123,20 @@
                         <div class="col-span-1 sm:col-span-4">
                             <h3 class="text-base sm:text-lg font-semibold text-spaceTeal-1 mb-3 sm:mb-4">Contact</h3>
                             <div class="flex flex-col space-y-2">
-                                <div class="flex items-start space-x-2">
-                                    <svg class="w-5 h-5 text-spaceTeal-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-spaceTeal-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                    <a href="mailto:kate.c.howells@gmail.com" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300 break-all">
+                                    <a href="mailto:kate.c.howells@gmail.com" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300 break-all leading-tight">
                                         kate.c.howells@gmail.com
                                     </a>
                                 </div>
-                                <div class="flex items-start space-x-2">
-                                    <svg class="w-5 h-5 text-spaceTeal-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-spaceTeal-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
-                                    <span class="text-sm sm:text-base text-spaceWhite-1">Guelph, ON</span>
+                                    <span class="text-sm sm:text-base text-spaceWhite-1 leading-tight">Guelph, ON</span>
                                 </div>
                             </div>
                         </div>
