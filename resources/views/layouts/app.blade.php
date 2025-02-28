@@ -11,10 +11,6 @@
         <link rel="icon" type="image/png" href="{{ asset('images/space/saturn_logo.png') }}">
         <link rel="icon" type="image/x-icon" href="{{ asset('images/space/favicon.ico') }}">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=space-grotesk:400,500,600,700" rel="stylesheet" />
-
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -95,9 +91,9 @@
             <!-- Footer -->
             <footer class="border-t border-spaceOrange-2 relative z-30 bg-spaceBrown-2/80 backdrop-blur-sm">
                 <div class="max-w-7xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-2 sm:grid-cols-12 gap-6 sm:gap-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 sm:gap-8">
                         <!-- Brand -->
-                        <div class="col-span-2 sm:col-span-4">
+                        <div class="col-span-1 sm:col-span-4">
                             <div class="logo flex flex-col leading-none -space-y-2">
                                 <span class="text-spaceTeal-2 text-2xl sm:text-3xl">Kate</span>
                                 <span class="text-spaceTeal-3 text-2xl sm:text-3xl">Howells</span>
@@ -127,18 +123,20 @@
                         <div class="col-span-1 sm:col-span-4">
                             <h3 class="text-base sm:text-lg font-semibold text-spaceTeal-1 mb-3 sm:mb-4">Contact</h3>
                             <div class="flex flex-col space-y-2">
-                                <a href="mailto:kate.c.howells@gmail.com" class="relative pl-7 text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300">
-                                    <svg class="absolute left-0 top-1/2 -translate-y-1/2 w-5 h-5 text-spaceTeal-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-spaceTeal-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                    <span>kate.c.howells@gmail.com</span>
-                                </a>
-                                <div class="relative pl-7 text-sm sm:text-base text-spaceWhite-1">
-                                    <svg class="absolute left-0 top-1/2 -translate-y-1/2 w-5 h-5 text-spaceTeal-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <a href="mailto:kate.c.howells@gmail.com" class="text-sm sm:text-base text-spaceWhite-1 hover:text-spaceOrange-1 transition-colors duration-300 break-all">
+                                        kate.c.howells@gmail.com
+                                    </a>
+                                </div>
+                                <div class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-spaceTeal-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
-                                    <span>Guelph, ON</span>
+                                    <span class="text-sm sm:text-base text-spaceWhite-1">Guelph, ON</span>
                                 </div>
                             </div>
                         </div>
