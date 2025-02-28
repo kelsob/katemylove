@@ -16,6 +16,10 @@
         <link rel="preload" href="/fonts/SpaceCrusaders.ttf" as="font" type="font/ttf" crossorigin>
         <link rel="preload" href="/fonts/TitillumWeb.ttf" as="font" type="font/ttf" crossorigin>
 
+        <!-- Preload navigation background images -->
+        <link rel="preload" href="{{ asset('images/space/saturn_rings_colored.webp') }}" as="image">
+        <link rel="preload" href="{{ asset('images/space/saturn_rings_colored_mobile.webp') }}" as="image" media="(max-width: 480px)">
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
