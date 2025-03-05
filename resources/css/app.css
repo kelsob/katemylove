@@ -30,11 +30,13 @@
     src: url('/fonts/SpaceCrusaders.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+    size-adjust: 105%;
+    ascent-override: 90%;
+    descent-override: 20%;
 }
 
-body {
-    font-family: 'SpaceCrusaders'; /* Fallback to sans-serif */
-}
-nav * {
-    font-family: 'SpaceCrusaders', sans-serif; /* Fallback to sans-serif */
+nav *, .nav-link {
+    font-family: 'SpaceCrusaders', Arial, sans-serif;
+    letter-spacing: 0.05em;  /* Adjust this value to match SpaceCrusaders better */
 }

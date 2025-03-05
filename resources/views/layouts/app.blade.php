@@ -5,16 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Kate Howells</title>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{ asset('images/space/saturn_logo.png') }}">
         <link rel="icon" type="image/x-icon" href="{{ asset('images/space/favicon.ico') }}">
 
-        <!-- Preload custom fonts -->
-        <link rel="preload" href="/fonts/EuroStyle.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="/fonts/SpaceCrusaders.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="/fonts/TitillumWeb.ttf" as="font" type="font/ttf" crossorigin>
+        <!-- Fonts -->
+        <link rel="preconnect" href="{{ asset('') }}" crossorigin>
+        <link rel="preload" href="{{ asset('fonts/SpaceCrusaders.ttf') }}" as="font" type="font/ttf" crossorigin fetchpriority="high">
 
         <!-- Preload navigation background images -->
         <link rel="preload" href="{{ asset('images/space/saturn_rings_colored.webp') }}" as="image">
