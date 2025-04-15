@@ -160,6 +160,9 @@
                         <p class="text-spaceWhite-2 text-xs sm:text-sm text-center">
                             &copy; {{ date('Y') }} Kate Howells. All rights reserved.
                         </p>
+                        <p class="text-spaceWhite-2 text-xs sm:text-sm text-center mt-2">
+                            Website designed by: <a href="https://www.pixelburstdigital.com" class="text-spaceTeal-1 hover:text-spaceOrange-1 transition-colors duration-300 hover:underline">www.pixelburstdigital.com</a>
+                        </p>
                     </div>
                 </div>
             </footer>
