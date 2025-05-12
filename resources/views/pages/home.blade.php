@@ -27,9 +27,9 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
             </div>
 
             <div class="mt-4 pt-4 lg:mt-0 lg:col-span-5">
-                <div class="relative w-full" style="height: 400px">
+                <div class="relative w-196 lg:h-[400px] h-[300px]">
                     <div class="rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-500 shadow-xl h-full">
-                        <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative z-10 w-full h-full object-cover object-center rounded-lg shadow-lg">
+                        <img src="{{ config('images.profile.kate') }}" alt="Kate" class="relative mx-auto z-10 h-full object-cover object-center rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
@@ -37,7 +37,208 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
     </div>
 
 
-    <!-- Services Section -->
+    <!-- Featured Work Section -->
+    <section id="portfolio" class="min-h-screen flex items-center mb-8 sm:mx-8 p-4 sm:p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
+        <div class="relative z-20">
+            <div class="text-start">
+                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders mb-4">
+                    My Work
+                </h2>
+                <p class="text-lg text-spaceWhite-2">
+Since 2013, I have worked in communications roles with The Planetary Society, the world's largest space interest organization founded by Carl Sagan and led today by Bill Nye. I currently serve as Public Education Specialist, writing educational articles and a weekly newsletter for a mailing list of over 100,000 people around the world, and as Editor-in-Chief of The Planetary Report, our quarterly magazine.<br><br>
+
+I have written two books on space science for public audiences, spoken at conferences and public events, and given dozens of interviews for television, radio, podcasts, and print. <br><br>
+
+I have also served on several boards and advisory councils in the space community, and in 2017, I was one of ten experts appointed to the Government of Canada's Space Advisory Board. 
+
+Below are a few examples of my recent and most relevant work.
+                </p>
+            </div>
+
+            <div class="mt-4 space-y-12">
+                <!-- Books -->
+                <div class="bg-spaceRed-2 rounded-lg p-4 shadow-xl">
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Books</h3>
+                    <div class="space-y-8">
+                        <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                                <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
+                                    <img src="{{ asset('images/media/moons.webp') }}" alt="Moons Book Cover" class="w-full h-auto object-contain rounded">
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
+                                    <p class="mt-2 text-spaceWhite-1 text-sm">Join space evangelist Kate Howells on an interplanetary voyage to explore the mind-boggling moons of our solar system, from the volcanic hellscape of Io to the ice mountains and methane seas of Titan.</p>
+                                    <div class="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                                        <a href="https://www.amazon.ca/Moons-Mysteries-Marvels-Solar-System/dp/0645817996" 
+                                           target="_blank"
+                                           class="w-full sm:w-auto inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300 text-center">
+                                            <span class="whitespace-nowrap">Pre-Order</span>
+                                        </a>
+                                        <span class="text-spaceTeal-1 font-bold">Releasing September 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                                <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
+                                    <img src="{{ asset('images/media/spaceiscoolasfuck.webp') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-auto object-contain rounded">
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold text-spaceTeal-1">Space is Cool as F**k</h4>
+                                    <p class="mt-2 text-spaceWhite-1 text-sm">From astrophysics to rocket science to the future of space exploration, Space Is Cool as F*ck explains everything you thought you'd never understand about the universe in plain-old filthy English.</p>
+                                    <a href="https://www.amazon.ca/Space-Cool-as-F-ck/dp/1524862975" 
+                                       target="_blank"
+                                       class="mt-4 w-full sm:w-auto inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300 text-center">
+                                        Buy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Articles -->
+                <div class="bg-spaceOrange-2 rounded-lg p-4 shadow-xl">
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-2">Featured Articles</h3>
+                    <div class="space-y-6">
+                        <a href="https://www.planetary.org/articles/the-fermi-paradox-where-are-all-the-aliens" 
+                           target="_blank" 
+                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="w-32 h-32 flex-shrink-0 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
+                                <img src="{{ asset('images/media/enrico-fermi.webp') }}" alt="Enrico Fermi explaining a physics problem" class="w-full h-full object-cover rounded">
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-spaceTeal-1">The Fermi Paradox: Where are all the aliens?</h4>
+                                <p class="mt-2 text-spaceTeal-2">The conditions for intelligent life to arise don't seem uncommon in the Cosmos. So where is everybody?</p>
+                                <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
+                                    <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <span class="text-spaceTeal-2">May 8, 2025 • The Planetary Society</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.planetary.org/articles/the-voyager-golden-records" 
+                           target="_blank" 
+                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="w-32 h-32 flex-shrink-0 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
+                                <img src="{{ asset('images/media/kate-with-vgr.webp') }}" alt="The Voyager Golden Record with author reflected in the surface" class="w-full h-full object-cover rounded">
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-spaceTeal-1">The Voyager Golden Records: A cosmic love letter</h4>
+                                <p class="mt-2 text-spaceTeal-2">How a message to aliens captured the human spirit.</p>
+                                <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
+                                    <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <span class="text-spaceTeal-2">April 29, 2025 • The Planetary Society</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.planetary.org/articles/how-space-explorers-could-grow-habitats-from-fungus" 
+                           target="_blank" 
+                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div class="w-32 h-32 flex-shrink-0 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
+                                <img src="{{ asset('images/media/fungus.webp') }}" alt="Fungal Space Habitat Concept" class="w-full h-full object-cover rounded">
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-spaceTeal-1">How space explorers could grow habitats from fungus</h4>
+                                <p class="mt-2 text-spaceTeal-2">A far-out but very real possibility for sustainable space habitation.</p>
+                                <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
+                                    <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <span class="text-spaceTeal-2">Feb 13, 2025 • The Planetary Society</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        
+                    </div>
+                </div>
+
+                <!-- Public Speaking and Media -->
+                <div class="bg-spaceTeal-4 rounded-lg p-4 shadow-xl">
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-2 font-space-crusaders">Public Speaking and Media</h3>
+                    <p class="text-spaceTeal-2 mb-6 text-lg">I am a trusted source on space topics for media and public institutions, including:</p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/nyt-logo.webp') }}" alt="New York Times Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/rom-logo.webp') }}" alt="Royal Ontario Museum Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/cbc-logo.webp') }}" alt="CBC Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/ctv-news-logo.webp') }}" alt="CTV News Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/medium-logo.webp') }}" alt="Medium Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
+                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
+                                <img src="{{ asset('images/media/cmn-logo.webp') }}" alt="CMN Logo" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communications and Non-Profit Consulting -->
+                <div class="bg-spaceBrown-2 rounded-lg p-4 sm:p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Communications and Non-Profit Consulting</h3>
+                    <div class="space-y-6">
+                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
+                                    <img src="{{ asset('images/media/govcanada-logo.webp') }}" alt="Government of Canada Logo" class="w-full h-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold text-spaceWhite-1">Government of Canada</h4>
+                                <p class="mt-2 text-spaceWhite-2">Member of the Space Advisory Board (2017-2020), providing strategic guidance for Canada's space program.</p>
+                            </div>
+                        </div>
+                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
+                                    <img src="{{ asset('images/media/seds-canada-logo.webp') }}" alt="SEDS Canada Logo" class="w-full h-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold text-spaceWhite-1">SEDS Canada</h4>
+                                <p class="mt-2 text-spaceWhite-2">Member of the board of advisors (current), supporting student engagement in space exploration and development.</p>
+                            </div>
+                        </div>
+                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
+                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                                    <img src="{{ asset('images/media/rcs-logo.webp') }}" alt="Royal City Science Logo" class="w-full h-full object-contain">
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold text-spaceWhite-1">Royal City Science</h4>
+                                <p class="mt-2 text-spaceWhite-2">Member of the board of directors (2020-2024), advising on non-profit strategy for community science education.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="services" class="flex flex-col items-center mb-16 mx-4 sm:mx-8 p-4 sm:p-8 rounded-xl bg-spaceBrown-2/80 backdrop-blur-sm shadow-lg shadow-black/50 w-auto max-w-7xl xl:mx-auto">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-start flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
@@ -190,209 +391,6 @@ As a freelancer, I'm here to help you connect with your audiences and reach your
             </a>
         </div>
     </section>
-
-    <!-- Featured Work Section -->
-    <section id="portfolio" class="min-h-screen flex items-center mx-4 sm:mx-8 p-4 sm:p-8 rounded-xl bg-spaceTeal-5/80 backdrop-blur-sm shadow-lg shadow-black/50 relative overflow-hidden w-auto max-w-7xl lg:mx-auto">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-            <div class="text-start">
-                <h2 class="text-spaceOrange-1 font-semibold tracking-wide text-3xl font-space-crusaders mb-8">
-                    My Work
-                </h2>
-                <p class="text-lg text-spaceWhite-2">
-Since 2013, I have worked in communications roles with The Planetary Society, the world's largest space interest organization founded by Carl Sagan and led today by Bill Nye. I currently serve as Public Education Specialist, writing educational articles and a weekly newsletter for a mailing list of over 100,000 people around the world, and as Editor-in-Chief of The Planetary Report, our quarterly magazine.<br><br>
-
-I have written two books on space science for public audiences, spoken at conferences and public events, and given dozens of interviews for television, radio, podcasts, and print. <br><br>
-
-I have also served on several boards and advisory councils in the space community, and in 2017, I was one of ten experts appointed to the Government of Canada's Space Advisory Board. 
-
-Below are a few examples of my recent and most relevant work.
-                </p>
-            </div>
-
-            <div class="mt-8 space-y-12">
-                <!-- Books -->
-                <div class="bg-spaceRed-2 rounded-lg p-4 sm:p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Books</h3>
-                    <div class="space-y-8">
-                        <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
-                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
-                                <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/moons.webp') }}" alt="Moons Book Cover" class="w-full h-auto object-contain rounded">
-                                </div>
-                                <div class="flex-1">
-                                    <h4 class="text-xl font-bold text-spaceTeal-1">Moons</h4>
-                                    <p class="mt-2 text-spaceWhite-1 text-sm">Join space evangelist Kate Howells on an interplanetary voyage to explore the mind-boggling moons of our solar system, from the volcanic hellscape of Io to the ice mountains and methane seas of Titan.</p>
-                                    <div class="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                                        <a href="https://www.amazon.ca/Moons-Mysteries-Marvels-Solar-System/dp/0645817996" 
-                                           target="_blank"
-                                           class="w-full sm:w-auto inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300 text-center">
-                                            <span class="whitespace-nowrap">Pre-Order</span>
-                                        </a>
-                                        <span class="text-spaceTeal-1 font-bold">Releasing September 2025</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-spaceRed-1 p-4 sm:p-6 rounded-lg">
-                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
-                                <div class="w-full sm:w-48 h-auto bg-spaceRed-2 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/spaceiscoolasfuck.webp') }}" alt="Space is Cool as F**k Book Cover" class="w-full h-auto object-contain rounded">
-                                </div>
-                                <div class="flex-1">
-                                    <h4 class="text-xl font-bold text-spaceTeal-1">Space is Cool as F**k</h4>
-                                    <p class="mt-2 text-spaceWhite-1 text-sm">From astrophysics to rocket science to the future of space exploration, Space Is Cool as F*ck explains everything you thought you'd never understand about the universe in plain-old filthy English.</p>
-                                    <a href="https://www.amazon.ca/Space-Cool-as-F-ck/dp/1524862975" 
-                                       target="_blank"
-                                       class="mt-4 w-full sm:w-auto inline-block px-6 py-2 bg-spaceTeal-3 text-spaceWhite-1 rounded-lg font-eurostyle font-bold text-lg hover:bg-spaceTeal-2 transition-colors duration-300 text-center">
-                                        Buy
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Featured Articles -->
-                <div class="bg-spaceOrange-2 rounded-lg p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 font-space-crusaders mb-6">Featured Articles</h3>
-                    <div class="space-y-6">
-                        <a href="https://www.planetary.org/articles/how-space-explorers-could-grow-habitats-from-fungus" 
-                           target="_blank" 
-                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
-                            <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
-                                <img src="{{ asset('images/media/fungus.webp') }}" alt="Fungal Space Habitat Concept" class="w-full h-full object-cover rounded">
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-spaceTeal-1">How space explorers could grow habitats from fungus</h4>
-                                <p class="mt-2 text-spaceTeal-2">A far-out but very real possibility for sustainable space habitation.</p>
-                                <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
-                                    <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-                                    <span class="text-spaceTeal-2">Feb 13, 2025 • The Planetary Society</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="https://www.planetary.org/articles/an-exquisite-cosmic-coincidence" 
-                           target="_blank" 
-                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
-                            <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
-                                <img src="{{ asset('images/media/cosmiccoincidence.webp') }}" alt="Solar Eclipse" class="w-full h-full object-cover rounded">
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-spaceTeal-1">An exquisite cosmic coincidence</h4>
-                                <p class="mt-2 text-spaceTeal-2">Why total solar eclipses don't happen anywhere other than Earth.</p>
-                                <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
-                                    <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-                                    <span class="text-spaceTeal-2">March 19, 2024 • The Planetary Society</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="https://www.planetary.org/articles/are-aliens-real" 
-                           target="_blank" 
-                           class="block bg-spaceOrange-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 transform transition-transform duration-300 hover:scale-[1.02]">
-                            <div class="w-full sm:w-32 h-48 sm:h-32 bg-spaceOrange-2 rounded-lg p-2 flex items-center justify-center">
-                                <img src="{{ asset('images/media/arealiensreal.webp') }}" alt="Tardigrade in Space" class="w-full h-full object-cover rounded">
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-spaceTeal-1">Are aliens real?</h4>
-                                <p class="mt-2 text-spaceTeal-2">What scientists know about the possibility of alien life, from microbes to UFOs.</p>
-                                <div class="mt-3 flex items-center text-spaceTeal-1 text-sm">
-                                    <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-                                    <span class="text-spaceTeal-2">June 07, 2023 • The Planetary Society</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Public Speaking and Media -->
-                <div class="bg-spaceTeal-4 rounded-lg p-4 sm:p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-2 font-space-crusaders">Public Speaking and Media</h3>
-                    <p class="text-spaceTeal-2 mb-6 text-lg">I am a trusted source on space topics for media and public institutions, including:</p>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
-                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/nyt-logo.webp') }}" alt="New York Times Logo" class="w-full h-auto object-contain">
-                            </div>
-                        </div>
-                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
-                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/rom-logo.webp') }}" alt="Royal Ontario Museum Logo" class="w-full h-auto object-contain">
-                            </div>
-                        </div>
-                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
-                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/cbc-logo.webp') }}" alt="CBC Logo" class="w-full h-auto object-contain">
-                            </div>
-                        </div>
-                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
-                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/ctv-news-logo.webp') }}" alt="CTV News Logo" class="w-full h-auto object-contain">
-                            </div>
-                        </div>
-                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
-                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/medium-logo.webp') }}" alt="Medium Logo" class="w-full h-auto object-contain">
-                            </div>
-                        </div>
-                        <div class="bg-spaceTeal-3 p-3 sm:p-4 rounded-lg">
-                            <div class="bg-spaceWhite-1 rounded-lg p-2 h-full flex items-center justify-center">
-                                <img src="{{ asset('images/media/cmn-logo.webp') }}" alt="CMN Logo" class="w-full h-auto object-contain">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Communications and Non-Profit Consulting -->
-                <div class="bg-spaceBrown-2 rounded-lg p-4 sm:p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-spaceTeal-2 mb-6 font-space-crusaders">Communications and Non-Profit Consulting</h3>
-                    <div class="space-y-6">
-                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
-                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/govcanada-logo.webp') }}" alt="Government of Canada Logo" class="w-full h-auto object-contain">
-                                </div>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="text-xl font-bold text-spaceWhite-1">Government of Canada</h4>
-                                <p class="mt-2 text-spaceWhite-2">Member of the Space Advisory Board (2017-2020), providing strategic guidance for Canada's space program.</p>
-                            </div>
-                        </div>
-                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
-                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center">
-                                    <img src="{{ asset('images/media/seds-canada-logo.webp') }}" alt="SEDS Canada Logo" class="w-full h-auto object-contain">
-                                </div>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="text-xl font-bold text-spaceWhite-1">SEDS Canada</h4>
-                                <p class="mt-2 text-spaceWhite-2">Member of the board of advisors (current), supporting student engagement in space exploration and development.</p>
-                            </div>
-                        </div>
-                        <div class="bg-spaceBrown-1 p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-                            <div class="bg-spaceBrown-2 p-2 rounded-lg w-full sm:w-auto">
-                                <div class="w-full sm:w-32 h-32 bg-spaceWhite-1 rounded-lg p-2 flex items-center justify-center overflow-hidden">
-                                    <img src="{{ asset('images/media/rcs-logo.webp') }}" alt="Royal City Science Logo" class="w-full h-full object-contain">
-                                </div>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="text-xl font-bold text-spaceWhite-1">Royal City Science</h4>
-                                <p class="mt-2 text-spaceWhite-2">Member of the board of directors (2020-2024), advising on non-profit strategy for community science education.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-8 sm:py-16 flex items-center relative overflow-hidden">
         <!-- Fixed star field background -->

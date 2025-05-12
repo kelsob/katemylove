@@ -40,15 +40,15 @@ style="background-image: url('{{ asset(request()->header('User-Agent') && preg_m
                     x-bind:class="activeSection === 'home' ? 'text-spaceWhite-1' : ''">
                     {{ __('Home') }}
                 </x-nav-link>
-                <x-nav-link href="#services" 
-                    class="rounded-lg px-4 text-xl pb-1 bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1"
-                    x-bind:class="activeSection === 'services' ? 'text-spaceWhite-1' : ''">
-                    {{ __('Services') }}
-                </x-nav-link>
                 <x-nav-link href="#portfolio" 
                     class="rounded-lg px-4 text-xl pb-1 bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1"
                     x-bind:class="activeSection === 'portfolio' ? 'text-spaceWhite-1' : ''">
                     <span class="whitespace-nowrap">{{ __('My Work') }}</span>
+                </x-nav-link>
+                <x-nav-link href="#services" 
+                    class="rounded-lg px-4 text-xl pb-1 bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1"
+                    x-bind:class="activeSection === 'services' ? 'text-spaceWhite-1' : ''">
+                    {{ __('Services') }}
                 </x-nav-link>
                 <x-nav-link href="#contact" 
                     class="rounded-lg px-4 text-xl pb-1 bg-spaceTeal-3 text-spaceTeal-1 hover:text-spaceWhite-1"
@@ -87,6 +87,20 @@ style="background-image: url('{{ asset(request()->header('User-Agent') && preg_m
                     </svg>
                 </template>
             </x-responsive-nav-link>
+            <x-responsive-nav-link href="#portfolio" 
+                @click="open = false"
+                class="text-2xl font-medium text-center transition-all duration-200 py-2 px-4 rounded-lg flex items-center justify-center gap-3"
+                x-bind:class="activeSection === 'portfolio' 
+                    ? 'bg-spaceTeal-3/20 text-spaceTeal-2 border-l-4 border-spaceTeal-2'
+                    : 'text-spaceWhite-1 hover:text-spaceTeal-2 hover:bg-spaceTeal-3/10'">
+                {{ __('My Work') }}
+                <template x-if="activeSection === 'portfolio'">
+                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2" viewBox="0 0 24 24" fill="currentColor">
+                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
+                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
+                    </svg>
+                </template>
+            </x-responsive-nav-link>
             <x-responsive-nav-link href="#services" 
                 @click="open = false"
                 class="text-2xl font-medium text-center transition-all duration-200 py-2 px-4 rounded-lg flex items-center justify-center gap-3"
@@ -95,20 +109,6 @@ style="background-image: url('{{ asset(request()->header('User-Agent') && preg_m
                     : 'text-spaceWhite-1 hover:text-spaceTeal-2 hover:bg-spaceTeal-3/10'">
                 {{ __('Services') }}
                 <template x-if="activeSection === 'services'">
-                    <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2" viewBox="0 0 24 24" fill="currentColor">
-                        <ellipse cx="12" cy="12" rx="7" ry="7"/>
-                        <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>
-                    </svg>
-                </template>
-            </x-responsive-nav-link>
-            <x-responsive-nav-link href="#portfolio" 
-                @click="open = false"
-                class="text-2xl font-medium text-center transition-all duration-200 py-2 px-4 rounded-lg flex items-center justify-center gap-3"
-                x-bind:class="activeSection === 'portfolio' 
-                    ? 'bg-spaceTeal-3/20 text-spaceTeal-2 border-l-4 border-spaceTeal-2'
-                    : 'text-spaceWhite-1 hover:text-spaceTeal-2 hover:bg-spaceTeal-3/10'">
-                {{ __('Previous Work') }}
-                <template x-if="activeSection === 'portfolio'">
                     <svg class="h-4 w-4 min-h-[1rem] min-w-[1rem] text-spaceTeal-2" viewBox="0 0 24 24" fill="currentColor">
                         <ellipse cx="12" cy="12" rx="7" ry="7"/>
                         <ellipse cx="12" cy="12" rx="12" ry="4" fill="none" stroke-width="2" stroke="currentColor" transform="rotate(-35 12 12)"/>

@@ -2,6 +2,6 @@
 
 return [
     'profile' => [
-        'kate' => 'images\kate\kate-navidbaraty-TPS.webp'
+        'kate' => 'images\kate\kate-howells-headshot-2025.webp'
     ]
 ]; 
